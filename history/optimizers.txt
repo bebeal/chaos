@@ -1,0 +1,15 @@
+Stochastic Gradient Descent (SGD)
+Adaptive Moment Estimation (Adam)
+Root Mean Square Propagation (RMSProp)
+Adagrad
+Adadelta
+Nesterov Accelerated Gradient (NAG)
+Adahessian
+Nadam
+AMSGrad
+AdamW
+LAMB
+RAdam
+Yogi
+NovoGrad
+Ranger

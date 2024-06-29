@@ -1,0 +1,50 @@
+AlexNet
+LeNet
+VGG Net
+GoogleNet/Inception
+ResNet
+DenseNet
+Xception
+MobileNet
+SqueezeNet
+Inception-ResNet
+NASNet
+Wide ResNet
+ShuffleNet
+EfficientNet
+CapsuleNet
+U-Net
+FCN
+Mask R-CNN
+YOLO
+SSD
+Faster R-CNN
+RNN/LSTM
+GRU
+WaveNet
+Pointer Networks
+Transformer
+GPT
+BERT
+XLNet
+T5
+ALBERT
+RoBERTa
+GAN
+DCGAN
+WGAN
+CycleGAN
+Pix2Pix
+StyleGAN
+BigGAN
+DeepDream
+DeepStyle
+DQN
+A3C
+Rainbow
+PPO
+AlphaGo
+AlphaZero
+MuZero
+ViT
+MLP-Mixer

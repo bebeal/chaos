@@ -1,0 +1,9 @@
+Year,Component,Name,"Number of MOSFETs 
+(in trillions)",Remarks
+2022,Flash memory,Micron's V-NAND module,5.3,stacked package of sixteen 232-layer 3D NAND dies
+2020,any processor,Wafer Scale Engine 2,2.6,wafer-scale design of 84 exposed fields (dies)
+2024,GPU,Nvidia B100,0.208,"Uses two reticle limit dies, with 104 billion transistors each, joined 
+together and acting as a single large monolithic piece of silicon"
+2023,"microprocessor 
+(commercial)",M2 Ultra,0.134,SoC using two dies joined together with a high-speed bridge
+2020,DLP,Colossus Mk2 GC200,0.059,An IPU in contrast to CPU and GPU

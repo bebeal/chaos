@@ -1,0 +1,893 @@
+{
+        {
+            "title": "McCulloch-Pitts Neuron",
+            "image": "data:image/png;base64,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",
+            "description": "The McCulloch-Pitts neuron, proposed by Warren McCulloch and Walter Pitts in 1943, is a simple model of a biological neuron. It can take binary inputs and produce binary outputs, and was used as the basis for early neural network research.",
+            "date": "1943",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Perceptrons",
+            "image": "https://www.researchgate.net/profile/Svetoslav-Markov/publication/283901070/figure/fig2/AS:391487415177226@1470349281666/The-perceptron-of-Rosenblatt-22.png",
+            "description": "Perceptrons are a type of artificial neuron introduced by Frank Rosenblatt in 1958. They were used for image classification problems and laid the groundwork for neural network research.",
+            "date": "1958",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Backpropagation",
+            "image": "https://miro.medium.com/max/1200/1*LB10KFg5J7yK1MLxTXcLdQ.jpeg",
+            "description": "Backpropagation is a supervised learning algorithm used for training neural networks. It was developed by Paul Werbos in 1974, but popularized by David Rumelhart, Geoffrey Hinton, and Ronald Williams in 1986.",
+            "date": "1986",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Hopfield Networks",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Hopfield-net-vector.svg/1280px-Hopfield-net-vector.svg.png",
+            "description": "Hopfield networks, proposed by John Hopfield in 1982, are a type of recurrent artificial neural network that can store and recall patterns from partial or noisy input data.",
+            "date": "1982",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Boltzmann Machines",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Boltzmannexamplev1.png",
+            "description": "Boltzmann machines, invented by Geoff Hinton and Terry Sejnowski in 1983, are a type of stochastic recurrent neural network with binary units. They are useful for modeling complex systems and can learn to represent high-dimensional data in a low-dimensional space.",
+            "date": "1983",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Convolutional Neural Networks",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/6/63/Typical_cnn.png",
+            "description": "Convolutional neural networks (CNNs) are a type of neural network designed for image processing. They use convolutional layers to learn features from images and are widely used in computer vision applications.",
+            "date": "1990s",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Support Vector Machines",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Svm_separating_hyperplanes_%28SVG%29.svg/800px-Svm_separating_hyperplanes_%28SVG%29.svg.png",
+            "description": "A support vector machine (SVM) is a type of supervised learning algorithm used for classification, regression, and outlier detection. The goal of an SVM is to find the best hyperplane that separates data into different classes. SVMs are widely used in many applications such as image classification, text classification, and bioinformatics.",
+            "date": "2023-02-28",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Long Short-Term Memory Networks",
+            "image": "https://miro.medium.com/max/3840/1*Whb4w4LWvHS1vZvTYE9X7Q.png",
+            "description": "A long short-term memory (LSTM) network is a type of recurrent neural network (RNN) that is capable of learning long-term dependencies. LSTMs have been successfully applied in various fields such as speech recognition, natural language processing, and image captioning.",
+            "date": "2023-02-28",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Deep Belief Networks",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Deep_Belief_Network.png/640px-Deep_Belief_Network.png",
+            "description": "A deep belief network (DBN) is a type of deep neural network (DNN) composed of multiple layers of probabilistic, generative models. DBNs have been used in many applications such as speech recognition, image classification, and natural language processing.",
+            "date": "2023-02-28",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Restricted Boltzmann Machines",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Artificial_neural_network.svg",
+            "description": "A restricted Boltzmann machine (RBM) is a generative stochastic artificial neural network that can learn a probability distribution over its set of inputs. RBMs have been successfully applied in various fields such as computer vision, collaborative filtering, and natural language processing.",
+            "date": "2023-02-28",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "AlexNet",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Alexnet.svg",
+            "description": "AlexNet is a convolutional neural network architecture designed by Alex Krizhevsky for the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) in 2012. It achieved a top-5 error rate of 15.3%, more than 10.8 percentage points lower than that of the runner-up.",
+            "date": "2012",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Recurrent Neural Networks",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Recurrent_neural_network_unfold.svg/400px-Recurrent_neural_network_unfold.svg.png",
+            "description": "Recurrent neural networks (RNNs) are a class of neural networks that allow previous outputs to be used as inputs while having hidden states. They are especially useful in sequential data processing, such as natural language processing and speech recognition.",
+            "date": "1986",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Deep Q-Networks",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Deep_Q-Network.svg/400px-Deep_Q-Network.svg.png",
+            "description": "Deep Q-Networks (DQNs) are a type of reinforcement learning algorithm that use deep neural networks to approximate the Q function in Q-learning. They were introduced by Mnih et al. in 2013 and have been shown to achieve human-level performance on a variety of games.",
+            "date": "2013",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Generative Adversarial Networks",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/GAN_%28example%29.png/400px-GAN_%28example%29.png",
+            "description": "Generative Adversarial Networks (GANs) are a type of neural network that consists of two models: a generator model that creates samples, and a discriminator model that attempts to distinguish between real and fake samples. GANs are often used for image and video generation, as well as other generative tasks.",
+            "date": "2014",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Residual Networks",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Residual_neural_network.svg/400px-Residual_neural_network.svg.png",
+            "description": "Residual Networks (ResNets) are a type of neural network that uses residual connections, which allow for the training of much deeper networks than was previously possible. ResNets have been used to achieve state-of-the-art results in a variety of computer vision tasks, including image classification and object detection.",
+            "date": "2015",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Attention Mechanisms",
+            "image": "https://cdn.pixabay.com/photo/2018/07/14/11/28/attention-3535409_1280.jpg",
+            "description": "Attention mechanisms are a type of neural network architecture that allows the model to focus on specific parts of the input sequence. This approach has been used successfully in natural language processing tasks such as machine translation, text summarization, and question answering.",
+            "date": "2023-02-28",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Neural Machine Translation",
+            "image": "https://cdn.pixabay.com/photo/2017/06/07/01/12/translate-2387319_1280.jpg",
+            "description": "Neural Machine Translation is a method of using artificial neural networks to translate one language to another. It has shown significant improvements over traditional rule-based or statistical machine translation approaches.",
+            "date": "2023-02-28",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Capsule Networks",
+            "image": "https://cdn.pixabay.com/photo/2018/07/23/10/23/artificial-intelligence-3557236_1280.jpg",
+            "description": "Capsule Networks are a type of neural network architecture that aims to address some of the limitations of Convolutional Neural Networks. They are designed to capture the hierarchical relationships between different features in an input image, and have shown promising results in image classification tasks.",
+            "date": "2023-02-28",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "AlphaGo",
+            "image": "https://cdn.pixabay.com/photo/2018/07/17/18/42/artificial-intelligence-3547499_1280.jpg",
+            "description": "AlphaGo is a computer program that was designed to play the board game Go. It was developed by Google DeepMind using deep neural networks and reinforcement learning techniques. In 2016, AlphaGo defeated the world champion at the time, Lee Sedol, in a five-game match.",
+            "date": "2023-02-28",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Transformer Networks",
+            "image": "https://cdn.pixabay.com/photo/2018/07/14/11/28/artificial-intelligence-3535410_1280.jpg",
+            "description": "Transformer Networks are a type of neural network architecture that has achieved state-of-the-art results in a variety of natural language processing tasks. They are based on the concept of self-attention, which allows the model to selectively attend to different parts of the input sequence.",
+            "date": "2023-02-28",
+            "tags": [
+                "Artificial_Module"
+            ]
+        }, {        "title": "BERT",        "image": "https://miro.medium.com/max/1838/1*AiFLSZGwiE3haL4FWc4sBQ.png",        "description": "BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained natural language processing model developed by Google in 2018. It is based on the transformer architecture and has achieved state-of-the-art results on many NLP tasks.",        "date": "2018",        "tags": [            "Natural Language Processing",            "Artificial Intelligence"        ]
+    },
+    {
+        "title": "Deep Learning for Natural Language Processing",
+        "image": "https://miro.medium.com/max/1568/1*ewoTKdJLvRJVDcixW8psvA.jpeg",
+        "description": "Deep learning is a subfield of machine learning that has been applied successfully to natural language processing tasks such as machine translation, sentiment analysis, and text generation. Deep learning models use neural networks with many layers to learn complex representations of natural language data.",
+        "date": "2010s",
+        "tags": [
+            "Deep Learning",
+            "Natural Language Processing",
+            "Artificial Intelligence"
+        ]
+    },
+    {
+        "title": "Explainable Artificial Intelligence",
+        "image": "https://miro.medium.com/max/1100/1*sNf-oUWEV8Nht5JlL6_jzQ.png",
+        "description": "Explainable artificial intelligence (XAI) is an approach to designing AI systems that can be understood and explained by humans. XAI is becoming increasingly important as AI is used in more critical applications such as healthcare and finance.",
+        "date": "2010s",
+        "tags": [
+            "Artificial Intelligence",
+            "Interpretability"
+        ]
+    },
+    {
+        "title": "Dynamic Routing Between Capsules",
+        "image": "https://miro.medium.com/max/1200/1*bPZ6wIJZ6mJU6xlGZjKY9Q.png",
+        "description": "Dynamic routing between capsules is a technique for training neural networks introduced by Geoffrey Hinton in 2017. Capsules are groups of neurons that represent different properties of an object or concept, and dynamic routing allows the network to route information between capsules based on the similarity of their representations.",
+        "date": "2017",
+        "tags": [
+            "Artificial Intelligence",
+            "Neural Networks"
+        ]
+    },
+    {        "title": "CapsuleGAN",        "image": "https://miro.medium.com/max/3000/1*3qI1HejCvaY0tRftoV8sFQ.png",        "description": "CapsuleGAN is a generative adversarial network that uses capsules as its basic building block. It was introduced by Xinyu Zhou and others in 2018, and is designed to generate high-quality images.",        "date": "2018",        "tags": [            "Artificial Intelligence",            "Generative Adversarial Networks",            "Capsules"        ]
+    },
+    {
+        "title": "Neural Tangent Kernel",
+        "image": "https://d33wubrfki0l68.cloudfront.net/4d4d5273f5c6a1b276fe9c90b8d34a5ca6bcedf6/e1ba5/assets-jekyll/blog/nngp/linear_taylor.gif",
+        "description": "The Neural Tangent Kernel (NTK) is a kernel function that characterizes the evolution of the neural network's output during training. It was introduced by Arthur Jacot and others in 2018, and has been used to analyze the properties of deep neural networks.",
+        "date": "2018",
+        "tags": [
+            "Artificial Intelligence",
+            "Kernel Methods",
+            "Deep Neural Networks"
+        ]
+    },
+    {
+        "title": "Deep Graph Networks",
+        "image": "https://cdn.analyticsvidhya.com/wp-content/uploads/2019/03/graph_nn.png",
+        "description": "Deep Graph Networks are a type of neural network designed for graph-structured data. They use message-passing to propagate information between nodes in a graph, and have been used for tasks such as node classification and graph classification.",
+        "date": "2017",
+        "tags": [
+            "Artificial Intelligence",
+            "Graph Neural Networks"
+        ]
+    },
+    {
+        "title": "Few-Shot Learning",
+        "image": "https://www.topbots.com/wp-content/uploads/2021/01/Few-Shot-Learning-TopBots.png",
+        "description": "Few-shot learning is a type of machine learning in which a model is trained to recognize new classes of objects with only a few examples. It has been used to develop models that can learn from small amounts of data, and is a promising area of research for machine learning.",
+        "date": "2016",
+        "tags": [
+            "Artificial Intelligence",
+            "Machine Learning",
+            "Few-Shot Learning"
+        ]
+    },
+    {
+        "title": "Meta-Learning",
+        "image": "https://i.ytimg.com/vi/X0wWZtKJnaI/maxresdefault.jpg",
+        "description": "Meta-learning is a type of machine learning in which a model is trained to learn how to learn. It has been used to develop models that can learn from small amounts of data, adapt to new tasks quickly, and generalize to new domains.",
+        "date": "1990s",
+        "tags": [
+            "Artificial Intelligence",
+            "Machine Learning",
+            "Meta-Learning"
+        ]
+    },
+    {
+            "title": "Adversarial Training for Robustness",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Adversarial_example%2C_MNIST_8.svg/220px-Adversarial_example%2C_MNIST_8.svg.png",
+            "description": "Adversarial training is a technique used to improve the robustness of neural networks to adversarial examples, which are inputs that have been intentionally modified to fool the network. It involves adding adversarial examples to the training data to make the network more resistant to such attacks.",
+            "date": "2014",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Generative Adversarial Networks with Style Transfer",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/GAN_convolutional.svg/250px-GAN_convolutional.svg.png",
+            "description": "Generative adversarial networks (GANs) are a type of deep learning model used for generative tasks, such as image or text generation. Style transfer is a technique that involves applying the style of one image to the content of another image. Combining these two techniques allows for the creation of images that combine the content of one image with the style of another.",
+            "date": "2015",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Differentiable Programming",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Differentiable_programming.png/220px-Differentiable_programming.png",
+            "description": "Differentiable programming is an approach to writing programs that can be automatically differentiated. This allows for the use of gradient-based optimization methods to solve problems that would otherwise be difficult or impossible to solve using traditional programming techniques.",
+            "date": "2018",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Kohonen Networks",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Self_organizing_map_european_capitals.png/220px-Self_organizing_map_european_capitals.png",
+            "description": "Kohonen networks, also known as self-organizing maps (SOMs), are a type of unsupervised neural network used for clustering and visualization tasks. They use a competitive learning algorithm to form a low-dimensional representation of high-dimensional data.",
+            "date": "1982",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+
+        {
+            "title": "Self-Organizing Maps",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/3D_SOM_of_Feature_Space.jpg/220px-3D_SOM_of_Feature_Space.jpg",
+            "description": "Self-Organizing Maps (SOMs), also known as Kohonen maps, are a type of unsupervised learning algorithm that can be used to visualize high-dimensional data. They were invented by Teuvo Kohonen in the 1980s.",
+            "date": "1980s",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Support Vector Regression",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Svm-regression.svg/220px-Svm-regression.svg.png",
+            "description": "Support Vector Regression (SVR) is a type of regression algorithm based on Support Vector Machines (SVMs). It was introduced by Vladimir Vapnik and his colleagues in the 1990s and can be used for both linear and non-linear regression problems.",
+            "date": "1990s",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Bayesian Networks",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Bayesian_network_simple_example.png/220px-Bayesian_network_simple_example.png",
+            "description": "Bayesian Networks, also known as belief networks, are a type of probabilistic graphical model that can be used to represent and reason about uncertainty. They were introduced by Judea Pearl in the 1980s and have applications in a wide range of fields.",
+            "date": "1980s",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Decision Trees",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/CART_tree_titanic_survivors.png/220px-CART_tree_titanic_survivors.png",
+            "description": "Decision Trees are a type of supervised learning algorithm that can be used for classification and regression tasks. They work by recursively partitioning the data into subsets based on the most informative feature at each step. They were introduced by Ross Quinlan in the 1980s and have been widely used in machine learning.",
+            "date": "1980s",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {        "title": "Random Forests",        "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Random_forest_diagram_complete.png",        "description": "Random forests is an ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees.",        "date": "2001",        "tags": [            "Machine_Learning_Module"        ]
+    },
+    {
+        "title": "k-Nearest Neighbors",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/KnnClassification.svg/220px-KnnClassification.svg.png",
+        "description": "k-Nearest Neighbors is a type of instance-based learning or lazy learning, where the function is only approximated locally and all computation is deferred until classification. It is used for classification and regression.",
+        "date": "1967",
+        "tags": [
+            "Machine_Learning_Module"
+        ]
+    },
+    {
+        "title": "Principal Component Analysis",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/220px-GaussianScatterPCA.svg.png",
+        "description": "Principal Component Analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It is used for dimensionality reduction, feature extraction, and data visualization.",
+        "date": "1901",
+        "tags": [
+            "Machine_Learning_Module"
+        ]
+    },
+    {
+        "title": "Independent Component Analysis",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/ICA-artwork-ru.svg/220px-ICA-artwork-ru.svg.png",
+        "description": "Independent Component Analysis (ICA) is a computational method for separating a multivariate signal into additive, independent components. It is used for blind source separation, signal processing, and feature extraction.",
+        "date": "1987",
+        "tags": [
+            "Machine_Learning_Module"
+        ]
+    },
+    {
+            "title": "Autoencoders",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Autoencoder_structure.png/220px-Autoencoder_structure.png",
+            "description": "Autoencoders are neural networks that are trained to reconstruct their input data, and can be used for data compression and feature extraction.",
+            "date": "1980s",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Denoising Autoencoders",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Autoencoder_schema.png/220px-Autoencoder_schema.png",
+            "description": "Denoising autoencoders are a variant of autoencoders that are trained to reconstruct clean data from noisy input data.",
+            "date": "2008",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Variational Autoencoders",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/GaussianScatterPCA.svg/220px-GaussianScatterPCA.svg.png",
+            "description": "Variational autoencoders are a type of generative model that can generate new data samples from a learned distribution, and are trained using a maximum likelihood framework.",
+            "date": "2013",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Generative Models",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/GANs.png/220px-GANs.png",
+            "description": "Generative models are a type of machine learning model that can generate new data samples from a learned distribution, and are used in applications such as image and text generation.",
+            "date": "2014",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Gaussian Mixture Models",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mixture_of_Normals.png/220px-Mixture_of_Normals.png",
+            "description": "Gaussian mixture models (GMMs) are a type of probabilistic model that assumes all the data points are generated from a mixture of a finite number of Gaussian distributions with unknown parameters. They are often used for clustering and density estimation.",
+            "date": "1982",
+            "tags": [
+                "Statistical_Module"
+            ]
+        },
+        {
+            "title": "Hidden Markov Models",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/HiddenMarkovModel.svg/400px-HiddenMarkovModel.svg.png",
+            "description": "Hidden Markov models (HMMs) are a type of probabilistic model that assumes the system being modeled is a Markov process with hidden states that can be inferred from the observable data. They are widely used in speech recognition, natural language processing, and bioinformatics.",
+            "date": "1960s",
+            "tags": [
+                "Statistical_Module"
+            ]
+        },
+        {
+            "title": "Kalman Filters",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Extended-Kalman-Filter-Step.png/220px-Extended-Kalman-Filter-Step.png",
+            "description": "Kalman filters are a type of recursive algorithm used for estimating the state of a dynamic system from a series of noisy measurements. They were developed by Rudolf Kalman in the late 1950s and are widely used in control theory, navigation, and robotics.",
+            "date": "1950s",
+            "tags": [
+                "Statistical_Module"
+            ]
+        },
+        {
+            "title": "Particle Filters",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Particle_filter_illustration.png/220px-Particle_filter_illustration.png",
+            "description": "Particle filters, also known as sequential Monte Carlo methods, are a type of Bayesian filter that approximate the posterior distribution of a state space model using a set of particles with associated weights. They are widely used in robotics, tracking, and navigation.",
+            "date": "1993",
+            "tags": [
+                "Statistical_Module"
+            ]
+        }, 
+        {
+            "title": "Monte Carlo Methods",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Pi_30K.gif/220px-Pi_30K.gif",
+            "description": "Monte Carlo methods are a broad class of computational algorithms that rely on repeated random sampling to obtain numerical results. They are used in many different fields, including physics, engineering, and finance.",
+            "date": "1940s",
+            "tags": [
+                "Statistics_Module",
+                "Computational_Module"
+            ]
+        },
+        {
+            "title": "Natural Language Processing",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Unstructured_data_Software_suite_text.png/250px-Unstructured_data_Software_suite_text.png",
+            "description": "Natural Language Processing (NLP) is a subfield of computer science and artificial intelligence concerned with the interactions between computers and human language. It involves tasks such as text analysis, machine translation, and sentiment analysis.",
+            "date": "1950s",
+            "tags": [
+                "Artificial_Module",
+                "Linguistics_Module"
+            ]
+        },
+        {
+            "title": "Text Classification",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Text_classification.png/220px-Text_classification.png",
+            "description": "Text classification is the process of assigning predefined categories or tags to unstructured text data. It is used in various applications, such as spam filtering, sentiment analysis, and content categorization.",
+            "date": "1960s",
+            "tags": [
+                "Artificial_Module",
+                "Linguistics_Module"
+            ]
+        },
+        {
+            "title": "Text Generation",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/RNN-unrolled.png/220px-RNN-unrolled.png",
+            "description": "Text generation is the process of generating coherent and meaningful natural language text using machine learning techniques. Recurrent neural networks (RNNs) and transformer models are commonly used for this task.",
+            "date": "1990s",
+            "tags": [
+                "Artificial_Module",
+                "Linguistics_Module"
+            ]
+        },
+        {
+            "title": "Named Entity Recognition",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Named-entity-recognition.png/300px-Named-entity-recognition.png",
+            "description": "Named Entity Recognition (NER) is a subtask of natural language processing that aims to extract and classify named entities in unstructured text into predefined categories such as person names, organizations, and locations.",
+            "date": "1990s",
+            "tags": [
+                "Natural_Language_Processing"
+            ]
+        },
+        {
+            "title": "Sentiment Analysis",
+            "image": "https://miro.medium.com/max/5200/1*Gc0F-LdIRZm8Rw1LhpO18w.png",
+            "description": "Sentiment analysis is a technique used to identify and extract subjective information such as opinions and attitudes from text. It is commonly used in social media monitoring, customer feedback analysis, and market research.",
+            "date": "early 2000s",
+            "tags": [
+                "Natural_Language_Processing"
+            ]
+        },
+        {
+            "title": "Machine Translation",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Machine_translation.png/330px-Machine_translation.png",
+            "description": "Machine Translation is the task of automatically translating text from one language to another. It is one of the oldest and most challenging problems in Natural Language Processing, and has been a topic of research since the 1940s.",
+            "date": "1940s",
+            "tags": [
+                "Natural_Language_Processing"
+            ]
+        },
+        {
+            "title": "Language Models",
+            "image": "https://miro.medium.com/max/620/1*ympbNXPfMzW8XeJdfxGokA.png",
+            "description": "Language models are statistical models that learn to predict the likelihood of a sequence of words in a natural language. They are used in many Natural Language Processing tasks such as machine translation, speech recognition, and text generation.",
+            "date": "20th century",
+            "tags": [
+                "Natural_Language_Processing"
+            ]
+        },
+        {
+            "title": "Speech Recognition",
+            "image": "https://miro.medium.com/max/650/1*gB_bJ2gs7LZJ0py2vJ4aHA.png",
+            "description": "Speech recognition is the task of converting spoken language into text. It is used in many applications such as virtual assistants, automated transcription, and voice-controlled devices.",
+            "date": "1950s",
+            "tags": [
+                "Natural_Language_Processing"
+            ]
+        },
+        {
+            "title": "Speaker Recognition",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Voice_print_spectrum.jpg/220px-Voice_print_spectrum.jpg",
+            "description": "Speaker recognition, also known as voice recognition, is the task of recognizing the identity of a person from their voice. It has applications in security, forensics, and human-computer interaction.",
+            "date": "1960s",
+            "tags": [
+                "Artificial_Module",
+                "Signal_Processing_Module"
+            ]
+        },
+        {
+            "title": "Emotion Detection",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Brain_science.png/220px-Brain_science.png",
+            "description": "Emotion detection, also known as affective computing, is the process of identifying human emotions from facial expressions, speech, or physiological signals. It has applications in psychology, marketing, and human-robot interaction.",
+            "date": "1990s",
+            "tags": [
+                "Artificial_Module",
+                "Signal_Processing_Module"
+            ]
+        },
+        {
+            "title": "Computer Vision",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Fractal_Cosmos.jpg/240px-Fractal_Cosmos.jpg",
+            "description": "Computer vision is a field of artificial intelligence that focuses on enabling machines to interpret and understand visual data from the world around us. It has applications in image and video analysis, autonomous vehicles, and robotics.",
+            "date": "1960s",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Object Detection",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Tridimensional_vision_system.jpg/220px-Tridimensional_vision_system.jpg",
+            "description": "Object detection is a computer vision task that involves identifying instances of objects in images or videos. It has applications in autonomous vehicles, security, and robotics.",
+            "date": "1970s",
+            "tags": [
+                "Artificial_Module",
+                "Computer_Vision_Module"
+            ]
+        },
+        {
+            "title": "Image Segmentation",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Monochrome_image_of_natural_scene_before_segmentation_with_output.png/220px-Monochrome_image_of_natural_scene_before_segmentation_with_output.png",
+            "description": "Image segmentation is the process of dividing an image into multiple segments or regions, each of which corresponds to a different object or part of the image. It has applications in medical imaging, autonomous vehicles, and object recognition.",
+            "date": "1970s",
+            "tags": [
+                "Artificial_Module",
+                "Computer_Vision_Module"
+            ]
+        },
+        {        "title": "Image Classification",        "image": "https://images.unsplash.com/photo-1593642634339-9ac2db2d73c2",        "description": "Image classification is a computer vision task where a model is trained to assign a label or category to an input image. It has many applications, such as object recognition, face detection, and content-based image retrieval.",        "date": "1960s",        "tags": [            "Computer Vision"        ]
+    },
+    {
+        "title": "Image Generation",
+        "image": "https://images.unsplash.com/photo-1553062405-14a586b0718c",
+        "description": "Image generation is the task of generating new images that are similar to a given set of training images. This can be done using various techniques such as generative adversarial networks (GANs) and variational autoencoders (VAEs).",
+        "date": "2010s",
+        "tags": [
+            "Computer Vision",
+            "Generative Models"
+        ]
+    },
+    {
+        "title": "Image Restoration",
+        "image": "https://images.unsplash.com/photo-1543269869-9f2d2c73fc31",
+        "description": "Image restoration is the process of removing noise or other artifacts from an image to improve its quality. This can be done using various techniques such as denoising autoencoders, convolutional neural networks (CNNs), and deep image prior (DIP).",
+        "date": "1980s",
+        "tags": [
+            "Computer Vision",
+            "Image Processing"
+        ]
+    },
+    {
+        "title": "Super-Resolution",
+        "image": "https://images.unsplash.com/photo-1579186436371-471d1eebbafd",
+        "description": "Super-resolution is the process of generating a high-resolution image from a low-resolution image. This can be done using various techniques such as single image super-resolution (SISR) and multi-frame super-resolution (MFSR).",
+        "date": "1990s",
+        "tags": [
+            "Computer Vision",
+            "Image Processing"
+        ]
+    },
+    {
+        "title": "Style Transfer",
+        "image": "https://images.unsplash.com/photo-1622833064495-94d9e9e0d0b8",
+        "description": "Style transfer is the process of applying the style of one image to another image while preserving the content. This can be done using various techniques such as neural style transfer and cycle-consistent adversarial networks (CycleGANs).",
+        "date": "2010s",
+        "tags": [
+            "Computer Vision",
+            "Generative Models"
+        ]
+    },
+    {
+            "title": "Pose Estimation",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Pose_estimation_using_AI.jpg/220px-Pose_estimation_using_AI.jpg",
+            "description": "Pose estimation is the process of estimating the pose of an object or a person. It involves determining the position and orientation of the object or person in a given frame or series of frames.",
+            "date": "Early 2000s",
+            "tags": [
+                "Computer Vision",
+                "Deep Learning"
+            ]
+        },
+        {
+            "title": "Optical Character Recognition",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/OCRFeedingScanner.jpg/220px-OCRFeedingScanner.jpg",
+            "description": "Optical character recognition (OCR) is the electronic or mechanical conversion of images of typed, handwritten, or printed text into machine-encoded text.",
+            "date": "1950s",
+            "tags": [
+                "Computer Vision",
+                "Image Processing"
+            ]
+        },
+        {
+            "title": "Video Analysis",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Human_activity_recognition.png/220px-Human_activity_recognition.png",
+            "description": "Video analysis is the process of automatically analyzing video data in order to extract information from it. This can include tasks such as object tracking, activity recognition, and event detection.",
+            "date": "1990s",
+            "tags": [
+                "Computer Vision",
+                "Deep Learning"
+            ]
+        },
+        {
+            "title": "Action Recognition",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Human_action_recognition_2.png/220px-Human_action_recognition_2.png",
+            "description": "Action recognition is the process of recognizing human actions from video data. This can include tasks such as identifying sports moves, dance moves, or gestures.",
+            "date": "2000s",
+            "tags": [
+                "Computer Vision",
+                "Deep Learning"
+            ]
+        },
+        {
+            "title": "Human Pose Estimation",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Pose-Estimation.jpg/220px-Pose-Estimation.jpg",
+            "description": "Human pose estimation is the process of estimating the 3D positions of a person's body joints from an image or video data. This can be useful for applications such as motion capture, gaming, and virtual try-ons.",
+            "date": "Early 2000s",
+            "tags": [
+                "Computer Vision",
+                "Deep Learning"
+            ]
+        },
+        {
+            "title": "DensePose",
+            "image": "https://raw.githubusercontent.com/facebookresearch/DensePose/master/web/images/github-teaser.gif",
+            "description": "DensePose is a computer vision project developed by Facebook AI Research (FAIR) that aims to map all human pixels of an image or video frame to the 3D surface of a human body. This allows for detailed understanding and analysis of human movements and body postures.",
+            "date": "2018",
+            "tags": [
+                "Computer_Vision_Module"
+            ]
+        },
+        {
+            "title": "Tracking",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Tracking_example_with_Alpha_0.1_and_Beta_0.025.gif/250px-Tracking_example_with_Alpha_0.1_and_Beta_0.025.gif",
+            "description": "Tracking is a computer vision technique used to follow the motion of objects in a video sequence. It has many applications in fields such as surveillance, robotics, and self-driving cars.",
+            "date": "1970s",
+            "tags": [
+                "Computer_Vision_Module"
+            ]
+        },
+        {
+            "title": "Robotics",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Robot_carnival_Tokyo_01.jpg/250px-Robot_carnival_Tokyo_01.jpg",
+            "description": "Robotics is an interdisciplinary field that involves the design, construction, and operation of robots. It draws on knowledge from many areas, including computer science, mechanical engineering, electrical engineering, and artificial intelligence.",
+            "date": "1950s",
+            "tags": [
+                "AI_Module"
+            ]
+        },
+        {
+            "title": "Reinforcement Learning",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Reinforcement_learning_diagram.svg",
+            "description": "Reinforcement learning is a machine learning technique that involves training an agent to interact with an environment and maximize a cumulative reward signal. It has been successfully applied to many domains, including game playing, robotics, and recommendation systems.",
+            "date": "1980s",
+            "tags": [
+                "AI_Module"
+            ]
+        },
+        [    {        "title": "Q-Learning",        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Q-learning_diagram.svg/500px-Q-learning_diagram.svg.png",        "description": "Q-Learning is a model-free reinforcement learning algorithm. It is used to find an optimal action-selection policy for any given (finite) Markov decision process (MDP).",        "date": "1980",        "tags": [            "Reinforcement_Learning"        ]
+    },
+    {
+        "title": "Policy Gradient Methods",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Reinforcement_learning_diagram.svg/500px-Reinforcement_learning_diagram.svg.png",
+        "description": "Policy Gradient Methods are a class of reinforcement learning algorithms that rely on optimization of a parameterized policy directly.",
+        "date": "1992",
+        "tags": [
+            "Reinforcement_Learning"
+        ]
+    },
+    {
+        "title": "Actor-Critic Methods",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Reinforcement_learning_diagram.svg/500px-Reinforcement_learning_diagram.svg.png",
+        "description": "Actor-Critic Methods are a hybrid approach to reinforcement learning that combines elements of both value-based and policy-based methods. They use a value function to improve the policy and use the policy to generate more experience to improve the value function.",
+        "date": "1985",
+        "tags": [
+            "Reinforcement_Learning"
+        ]
+    },
+    {
+        "title": "Multi-Armed Bandits",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bandit_theory.svg/500px-Bandit_theory.svg.png",
+        "description": "Multi-armed bandits are a class of reinforcement learning problems where an agent must decide which of k arms to pull at each time step in order to maximize the total reward over a sequence of pulls.",
+        "date": "1952",
+        "tags": [
+            "Reinforcement_Learning"
+        ]
+    },
+    {
+            "title": "Monte Carlo Tree Search",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Monte-Carlo_Tree_Search_-_Exploration_Example.png",
+            "description": "Monte Carlo tree search (MCTS) is a heuristic search algorithm used to find the most promising moves in a large search space. It has been successfully applied to various game playing problems, such as Go, chess, and poker.",
+            "date": "2006",
+            "tags": [
+                "Reinforcement_Learning"
+            ]
+        },
+        {
+            "title": "Inverse Reinforcement Learning",
+            "image": "https://miro.medium.com/max/1920/0*YoX_JlgyJFtxUZgJ.jpg",
+            "description": "Inverse reinforcement learning (IRL) is a machine learning technique used to infer a reward function from observed behavior. It has applications in robotics, autonomous driving, and other areas where an agent's behavior needs to be optimized.",
+            "date": "2000s",
+            "tags": [
+                "Reinforcement_Learning"
+            ]
+        },
+        {
+            "title": "Imitation Learning",
+            "image": "https://cdn.analyticsvidhya.com/wp-content/uploads/2019/09/imitation-learning.gif",
+            "description": "Imitation learning is a type of machine learning where an agent learns to perform a task by imitating the behavior of an expert. It has been applied to various problems, such as autonomous driving and robotic manipulation.",
+            "date": "1990s",
+            "tags": [
+                "Supervised_Learning"
+            ]
+        },
+        {
+            "title": "Apprenticeship Learning",
+            "image": "https://miro.medium.com/max/1000/0*59gjLbN7HmMEPe9c.png",
+            "description": "Apprenticeship learning is a type of machine learning where an agent learns to perform a task by observing an expert and receiving feedback. It has been applied to various problems, such as autonomous driving and robotic manipulation.",
+            "date": "2000s",
+            "tags": [
+                "Reinforcement_Learning",
+                "Supervised_Learning"
+            ]
+        },
+        {
+            "title": "Transfer Learning",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Transfer_learning_concept.svg/220px-Transfer_learning_concept.svg.png",
+            "description": "Transfer learning is a technique in machine learning where a model trained on one task is repurposed for a different task. This approach can be useful when there is not enough data available to train a model from scratch.",
+            "date": "2000s",
+            "tags": [
+                "Artificial_Module",
+                "Machine_Learning_Module"
+            ]
+        },
+        {
+            "title": "Meta-Learning",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Meta-learning_overview.jpg/220px-Meta-learning_overview.jpg",
+            "description": "Meta-learning is a subfield of machine learning concerned with automatically learning algorithms or models that can learn from and adapt to new tasks or environments quickly with limited data.",
+            "date": "1990s",
+            "tags": [
+                "Artificial_Module",
+                "Machine_Learning_Module"
+            ]
+        },
+        {
+            "title": "Online Learning",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Online-learning.svg/220px-Online-learning.svg.png",
+            "description": "Online learning is a type of machine learning where the model learns from data that arrives in a continuous stream, updating its parameters as it goes. It is often used in situations where there is a lot of data or the data is too large to fit in memory.",
+            "date": "1990s",
+            "tags": [
+                "Artificial_Module",
+                "Machine_Learning_Module"
+            ]
+        },
+        {
+            "title": "Unsupervised Learning",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Unsupervised_learning_40_clusters.svg/220px-Unsupervised_learning_40_clusters.svg.png",
+            "description": "Unsupervised learning is a type of machine learning where the model is not provided with labeled data, but instead is given a dataset and must find patterns or structure on its own. Common techniques for unsupervised learning include clustering, dimensionality reduction, and generative models.",
+            "date": "1950s",
+            "tags": [
+                "Artificial_Module",
+                "Machine_Learning_Module"
+            ]
+        },
+        {
+            "title": "Semi-Supervised Learning",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Semi-supervised_learning.png/220px-Semi-supervised_learning.png",
+            "description": "Semi-supervised learning is a type of machine learning that uses both labeled and unlabeled data to train a model. It is often used when there is not enough labeled data available to fully train a model, but there is a large amount of unlabeled data that can still be used to improve performance.",
+            "date": "2000s",
+            "tags": [
+                "Artificial_Module",
+                "Machine_Learning_Module"
+            ]
+        },
+        {
+            "title": "Active Learning",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Active_learning_new.png/220px-Active_learning_new.png",
+            "description": "Active learning is a supervised learning technique where a machine learning model is trained on a subset of labeled data, and the algorithm selects the most informative samples to be labeled by an expert. This process continues iteratively until the model achieves a satisfactory level of accuracy.",
+            "date": "",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Continual Learning",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Continual_learning_overview.svg/220px-Continual_learning_overview.svg.png",
+            "description": "Continual learning, also known as lifelong learning, is a machine learning paradigm where a model learns from a sequence of tasks over its lifetime, continuously updating its knowledge without forgetting previously learned information. It is a challenging problem in machine learning due to the potential for catastrophic forgetting.",
+            "date": "",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Federated Learning",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Federated_learning_process_diagram.svg/220px-Federated_learning_process_diagram.svg.png",
+            "description": "Federated learning is a distributed machine learning approach where multiple devices or servers collaborate to train a shared model without sharing their local data. It is used to protect user privacy and reduce communication costs in large-scale machine learning applications.",
+            "date": "",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Evolutionary Algorithms",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Genetic_algorithm_process.png/220px-Genetic_algorithm_process.png",
+            "description": "Evolutionary algorithms are a family of optimization algorithms inspired by biological evolution. They are used to find solutions to complex optimization problems by simulating natural selection, mutation, and reproduction. Examples include genetic algorithms, evolutionary strategies, and genetic programming.",
+            "date": "",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Genetic Algorithms",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Genetic_algorithm_process.png/220px-Genetic_algorithm_process.png",
+            "description": "Genetic algorithms are a type of evolutionary algorithm that use techniques inspired by natural selection to optimize a solution to a problem. They are often used in optimization problems where the search space is large and complex.",
+            "date": "",
+            "tags": [
+                "Artificial_Module"
+            ]
+        },
+        {
+            "title": "Particle Swarm Optimization",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/ParticleSwarmArrowsAnimation.gif/220px-ParticleSwarmArrowsAnimation.gif",
+            "description": "Particle swarm optimization is a population-based optimization technique that uses a swarm of particles to explore the search space. It was introduced by James Kennedy and Russell Eberhart in 1995 and is inspired by the collective behavior of social animals.",
+            "date": "1995",
+            "tags": [
+                "Artificial_Intelligence"
+            ]
+        },
+        {
+            "title": "Ant Colony Optimization",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Ant_colony.jpg/220px-Ant_colony.jpg",
+            "description": "Ant colony optimization is a population-based optimization technique that is inspired by the foraging behavior of ants. It was introduced by Marco Dorigo in 1992 and has been applied to a variety of optimization problems.",
+            "date": "1992",
+            "tags": [
+                "Artificial_Intelligence"
+            ]
+        },
+        {
+            "title": "Artificial Life",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/ArtificialLife.png/220px-ArtificialLife.png",
+            "description": "Artificial life is a field of research that studies life and intelligence as they may exist outside of biological organisms. It was pioneered by Christopher Langton in the 1980s and has led to the development of new techniques for modeling and understanding complex systems.",
+            "date": "1980s",
+            "tags": [
+                "Artificial_Intelligence"
+            ]
+        },
+        {
+            "title": "Artificial General Intelligence",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Alan_Turing_Aged_16.jpg/220px-Alan_Turing_Aged_16.jpg",
+            "description": "Artificial general intelligence (AGI) is the hypothetical intelligence of a machine that can understand or learn any intellectual task that a human being can. It is a long-standing goal of artificial intelligence research, and has been the subject of much speculation and debate.",
+            "date": "N/A",
+            "tags": [
+                "Artificial_Intelligence"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+Sure, here's a brief history of neural nets focused on reinforcement learning:
+
+Q-Learning (1980s): Q-learning was one of the eaReinforcementLearningiest reinforcement learning algorithms developed for learning optimal policies in Markov decision processes. While not a neural net model itself, it provided a foundation for later work on neural net-based reinforcement learning.
+
+Neural Fitted Q-Iteration (2005): NFQ was one of the first neural net models applied to reinforcement learning. It used a neural network to approximate the Q-function, and learned the weights of the network through a regression process that minimized the difference between the predicted Q-values and the actual Q-values.
+
+Deep Q-Networks (2013): DQNs were introduced as a way to apply deep learning to reinforcement learning. They used a deep neural network to approximate the Q-function, and used experience replay and target networks to stabilize learning. DQNs achieved state-of-the-art results on several Atari game benchmarks.
+
+Policy Gradients (2014): Policy gradient methods were introduced as an alternative to Q-learning for learning policies directly. These methods used the gradient of the policy objective to update the policy parameters, and achieved state-of-the-art results on several continuous control tasks.
+
+Actor-Critic Methods (2015): Actor-critic methods combined the advantages of value-based and policy-based methods by learning both a value function and a policy function simultaneously. These methods used an actor network to generate actions, and a critic network to estimate the expected return from the current state.
+
+Proximal Policy Optimization (2017): PPO was introduced as a method for optimizing policy functions that was more sample-efficient and stable than previous methods. PPO used a clipped surrogate objective to ensure that policy updates were not too large, and achieved state-of-the-art results on several benchmarks.
+
+Deep Reinforcement Learning from Human Preferences (2017): DRHP was introduced as a way to learn policies from human feedback in the form of pairwise comparisons. DRHP used a neural network to learn a preference function that predicted which of two trajectories was preferred by a human, and then used this function to update the policy.
+
+AlphaGo (2016): AlphaGo was the first reinforcement learning system to achieve superhuman performance in the game of Go. It used a combination of neural net-based value function and policy function approximators, Monte CaReinforcementLearningo tree search, and extensive data augmentation and training to achieve its impressive results.
+
+These are just a few examples of the many neural net models that have been developed for reinforcement learning over the years. Each model introduced new ideas and techniques that have contributed to the advancement of the field, and many of these models have been adapted and extended for other types of tasks such as robotics and game playing.

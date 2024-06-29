@@ -1,0 +1,446 @@
+{{cleanup}}{{lang|SteamCMD}}[[Category:Dedicated Server]][[Category:Steam Applications]]
+The '''Steam Console Client''' or [[SteamCMD]] is a command-line version of the [[Steam|Steam Client]]. Its primary use is to install and update various dedicated servers available on [[Steam]] using a command-line interface.
+
+It works with games that use the [[SteamPipe]] content system.
+== Downloading SteamCMD ==
+
+=== {{windows|4}} ===
+#Download SteamCMD for Windows: [https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip]
+#Create a folder for SteamCMD. Example: {{path|D:\steamcmd}}
+#Extract the contents of the zip to the folder.
+{{note|There are several folders and files created on first boot, placing {{Path|steamcmd|exe|icon=exe}} in an 'install' folder is recommended but not required.}}
+
+=== {{linux|4}} ===
+Create a user account named ''steam'' to run SteamCMD safely, isolating it from the rest of the operating system.{{warning|Do not run <code>steamcmd</code> while operating as the root user. Doing so is a security risk.}}
+
+1. As the root user, create the ''steam'' user:
+ sudo useradd -m steam
+ sudo passwd steam
+2. Go into its home folder:
+ sudo -u steam -s
+ cd /home/steam
+
+==== Package From Repositories ====
+{{note|If available, it is recommended the SteamCMD package is installed from repositories provided by your distribution.}}
+
+===== Ubuntu =====
+To install SteamCMD the multiverse repository and x86 packages must be enabled.
+ sudo add-apt-repository multiverse; sudo dpkg --add-architecture i386; sudo apt update
+ sudo apt install steamcmd
+
+===== Debian =====
+To install SteamCMD add the non-free repository and x86 packages must be enabled. In Debian 12 (Bookworm) the apt-add-repository command no longer works, so you will need to create a work-around (See also: https://stackoverflow.com/questions/76688863/apt-add-repository-doesnt-work-on-debian-12).
+ sudo apt update; sudo apt install software-properties-common; sudo apt-add-repository non-free; sudo dpkg --add-architecture i386; sudo apt update
+ sudo apt install steamcmd
+
+===== Enterprise Linux =====
+{{note|No rpm package is available for any Red Hat-based distribution. See manual installation. }}
+
+===== Arch Linux =====
+ git clone https://aur.archlinux.org/steamcmd.git
+ cd steamcmd
+ makepkg -si
+{{Note|You will need to have the base-devel package installed to execute makepkg:
+  sudo pacman -Syy base-devel
+}}
+Gentoo:
+ emerge --ask games-server/steamcmd
+
+==== Docker ====
+If your server is running [https://www.docker.com/ Docker], you can simply use:
+<pre>
+docker run -it --name=steamcmd cm2network/steamcmd bash
+</pre>
+
+<code>steamcmd.sh</code> is located at <code>/home/steam/steamcmd</code>.
+
+This image can be used as a base image for Steam-based dedicated servers. 
+Example: [https://hub.docker.com/r/cm2network/csgo/]
+
+You can find the associated Docker Hub page here: [https://hub.docker.com/r/cm2network/steamcmd/]
+
+==== Manually ====
+1. Before you begin, you must first install the dependencies required to run SteamCMD:
+
+Ubuntu/Debian (x86-64)
+
+ sudo apt-get install lib32gcc-s1
+
+Enterprise Linux (x86-64)
+
+ yum install glibc.i686 libstdc++.i686
+
+2. As the root user, escalate to the ''steam'' user:
+
+ su - steam
+
+If you're not logging in as root and you instead use {{code|sudo}} to perform administration, escalate to the ''steam'' user as follows:
+
+ sudo -iu steam
+
+3. Create a directory for SteamCMD and switch to it:
+
+ mkdir ~/Steam && cd ~/Steam
+
+4. Download and extract SteamCMD for Linux:
+
+ curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zxvf -
+
+=== {{macOS|4}} === 
+1. Open Terminal.app and create a directory for SteamCMD.
+
+ mkdir ~/Steam && cd ~/Steam
+
+2. Download and extract SteamCMD for macOS.
+
+ curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_osx.tar.gz" | tar zxvf -
+
+== Running SteamCMD ==
+On first run, SteamCMD will automatically update and enter you into a <code>Steam&gt;</code> prompt.  Type <code>help</code> for more information.
+
+=== {{windows|4}} === 
+Open a Command Prompt and start SteamCMD.
+
+ cd C:\steamcmd
+ steamcmd
+
+=== {{linux|4}} === 
+Open a terminal and start SteamCMD.
+
+If you installed it using the package from repositories:
+
+ steamcmd
+
+If you installed it manually:
+ cd ~/Steam
+ ./steamcmd.sh
+
+=== {{macOS|4}} === 
+{{ stub }}
+Open a terminal and start SteamCMD.
+
+If you installed it using the package from repositories:
+
+ cd ~
+ steamcmd
+
+If you installed it manually:
+ cd ~/Steam
+ ./steamcmd.sh
+
+== SteamCMD Login ==
+=== Anonymous ===
+To download most game servers, you can login anonymously using {{code|login anonymous}}
+
+=== With a Steam Account ===
+Some servers require you to login with a Steam Account.
+{{Note|For security reasons, it is recommended that you create a new Steam account just for your dedicated servers.}}
+{{Note|A user can only be logged in once at any time (counting both grapical client as well as SteamCMD logins).}}
+
+ login <username>
+
+Next enter your password.
+
+If Steam Guard is activated on the user account, check your e-mail for a Steam Guard access code and enter it. This is only required the first time you log in (as well as when you delete the files where SteamCMD stores the login information).
+
+You should see a message stating that you have successfully logged in with your account.
+
+== Downloading an App ==
+{{note|If you are uncertain about the ''appid'' for the server, tool, or game you want to download, you can use [https://steamdb.info steamdb.info] to locate it.}}
+
+1. Start SteamCMD, don't login just yet.
+
+2. Set your app install directory. (Note: use forward slashes for Linux/macOS and backslashes for Windows.)
+
+ force_install_dir &lt;path&gt;
+
+e.g. a directory named <code>cs_go</code> inside the current directory:
+
+ force_install_dir ./cs_go/
+
+'''For Windows''': force_install_dir c:\cs_go\
+
+{{warning|If you are running SteamCMD from your path env or installed it as a package, it will return an error if you try to use <code>.</code> as a directory. A workaround for this is to use the absolute path to the current directory.}}
+
+3. Login with the {{code|login}} command
+
+Valve recommends that you set the install dir before logging in.
+
+4. Install or update the app using the {{code|app_update}} command (supplying a [[Steam Application IDs|Steam Application ID]]). Please check here for the dedicated server list: [[Dedicated_Servers_List|Dedicated server list]]. To also validate the app, add {{code|validate}} to the command. To download a beta branch, use the {{code|-beta &lt;betaname&gt;}} option &ndash; for example, the HLDS beta branch is named {{code|beta}} and the SrcDS beta branch is named {{code|prerelease}}. Some beta branches are protected by a password; to be able to download from them, also add the {{code|-betapassword &lt;password&gt;}} option.
+
+ app_update &lt;app_id&gt; [-beta &lt;betaname&gt;] [-betapassword &lt;password&gt;] [validate]
+
+HLDS is a special case: the App ID is always 90 and a mod must be chosen first. This is done by setting the app config option <code>mod</code> to the requested value.
+
+ app_set_config &lt;app_id&gt; &lt;option_name&gt; &lt;option_value&gt;
+
+: Example: Install and validate the Counter-Strike: Global Offensive dedicated server:
+ app_update 740 validate
+: Example: Install and validate HLDS with Team Fortress Classic:
+ app_set_config 90 mod tfc
+ app_update 90 validate
+{{bug|HLDS (appid 90) currently requires multiple runs of the <code>app_update</code> command before all the required files are successfully installed. Simply run <code>app_update 90 validate</code> multiple times until no more updates take place.|only=}}
+: Example: Install and validate beta version of HLDS (Half-Life):
+ app_update 90 -beta beta validate
+: Example: install and validate beta version of the Counter-Strike: Source dedicated server:
+ app_update 232330 -beta prerelease validate
+: Example: install and validate a private beta version of the Natural Selection 2 dedicated server (name <code>alpha</code>, password <code>natsel</code>):
+:  [beta name] is the name of the private beta branch
+:  [beta code] is the password for the private beta branch
+ app_update 4940 -beta alpha -betapassword natsel validate
+
+The beta name for the non-beta branch is "public", so app_update 90 -beta public will take you off of the beta branch for HLDS.
+
+5. Once finished, type {{code|quit}} to properly log off of the Steam servers.
+
+=== Validate ===
+{{code|validate}} is a command that will check all the server files to make sure they match the SteamCMD files. This command is useful if you think that files may be missing or corrupted.
+
+{{Note|Validation will overwrite any files that have been changed. This may cause issues with customized servers. For example, if you customize <code>mapcycle.txt</code>, this file will be overwritten to the server default. Any files that are not part of the default installation will not be affected.}}
+
+It is recommended you use this command only on initial installation and if there are server issues.
+
+=== Supported Servers ===
+A list of known servers that use SteamCMD to install is available on the [[Dedicated Servers List]] page. Note that any extra commands listed need to be executed before the app_update line.
+
+== Automating SteamCMD ==
+There are two ways to automate SteamCMD. (Replace <code>steamcmd</code> with <code>./steamcmd.sh</code> on Linux/macOS.)
+
+=== Command Line ===
+{{Note|When using the <code>-beta</code> option on the command line, it must be quoted in a special way, such as <code>+app_update "90 -beta beta"</code>.}}
+{{Note|If this does not work, try putting it like <code>"+app_update 90 -beta beta"</code> instead.}}
+
+Append the commands to the command line prefixed with plus characters, e.g.:
+ steamcmd +force_install_dir ../cs1_ds +login anonymous +app_update 730 +quit
+
+To install a specific game mod for HL1, such as Counter-Strike: Condition Zero:
+ steamcmd +force_install_dir ../czero +login anonymous +app_set_config 90 mod czero +app_update 90 +quit
+
+For a game that requires logins, like Killing Floor:
+ steamcmd +force_install_dir c:\KFServer\ +login &lt;username&gt; &lt;password&gt; +app_update 215350 +quit
+
+=== Creating a Script ===
+1. Put your SteamCMD commands in a text file. (You may add comments which start with <code>//</code>.) Example:
+<pre>
+// update_csgo_ds.txt
+//
+@ShutdownOnFailedCommand 1 //set to 0 if updating multiple servers at once
+@NoPromptForPassword 1
+force_install_dir ../csgo_ds
+login <username> <password>
+//for servers which don't need a login
+//login anonymous 
+app_update 740 validate
+quit
+</pre>
+
+2. Run SteamCMD with the <code>+runscript</code> option, referring to the file you created previously. Example:
+
+ steamcmd +runscript update_csgo_ds.txt
+
+{{Note|If you're getting the error: <code>Failed to load script file 'scriptname.txt'</code>, try providing an absolute path like <code>/mnt/storage/tf2server/updatetf2_script.txt</code>}}
+
+== Cross-Platform Installation ==
+It is possible to choose the platform for which SteamCMD should download files, even if it isn't the platform it is currently running on. This is done using the <code>@sSteamCmdForcePlatformType</code> variable. (Yes, those are two "s"es at the beginning of the variable name.) For example, to download the Windows CSGO dedicated server on Linux, you can run the following command:
+
+ ./steamcmd.sh +@sSteamCmdForcePlatformType windows +force_install_dir ../csgo_ds +login anonymous +app_update 740 validate +quit
+
+or use the following script:
+
+<pre>
+@ShutdownOnFailedCommand 1
+@NoPromptForPassword 1
+@sSteamCmdForcePlatformType windows
+force_install_dir ../csgo_ds
+login anonymous
+app_update 740 validate
+quit
+</pre>
+
+The supported values are <code>windows</code>, <code>macos</code> and <code>linux</code>.
+
+== Windows Software/Scripts ==
+=== condenser ===
+<code>[https://github.com/sympatovit/condenser condenser]</code> is a bootstrapper for installing, configuring, & launching Steam dedicated server apps.
+
+=== SteamCMD AutoUpdater ===
+Install and automatically update any game server.
+
+GitHub Repo:
+https://github.com/C0nw0nk/SteamCMD-AutoUpdate-Any-Gameserver
+
+=== SteamCMD GUI ===
+This tool allows the user to use SteamCMD on Windows without command lines and/or batch files.
+
+GitHub Repo:
+https://github.com/DioJoestar/SteamCMD-GUI
+
+=== SteamPS ===
+[https://github.com/hjorslev/SteamPS SteamPS] is a PowerShell module that can be used to update servers, and fetch server information. It also presents a workflow to update game servers.
+
+===PowerShellGSM===
+[https://github.com/patrix87/PowerShellGSM PowerShellGSM] is a Modular PowerShell tool to manage game servers using SteamCMD.
+
+====Features====
+* Installation
+* Backups
+* Updates
+* Monitoring
+* Restarts
+
+====Supported Servers====
+PowerShellGSM includes 20+ templates servers and supports custom templates allowing you to virtually support any games (even non-SteamCMD games).
+
+====Advantages====
+Faster than most available tools.
+Lighter and more targeted backups.
+Modular.
+Expandable.
+Customizable.
+
+====Links====
+GitHub Repo: https://github.com/patrix87/PowerShellGSM
+
+== Linux Scripts ==
+
+===LinuxGSM===
+[[Image:LinuxGSM_Logo_White.png‎|right|thumb|370px|Linux Game Server Managers]]
+LinuxGSM is the command-line tool for quick, simple deployment and management of Linux dedicated game servers.
+
+====Features====
+* Installer
+* Updater
+* Monitor
+* Alerts
+* Server Details
+* Backups
+* Console
+
+====Supported Servers====
+There are now 100+ different game servers supported and rising. For a full list visit the website.
+
+====Links====
+Website: https://linuxgsm.com
+
+GitHub Repo: https://github.com/GameServerManagers/LinuxGSM
+
+===docker-steam-wine===
+
+Run a Steam powered Windows game server in [https://www.docker.com Docker].
+
+Project:
+https://github.com/nuxy/docker-steamcmd-wine
+
+== Known Issues ==
+===ERROR! Failed to install app "xxxxxx" (No subscription)===
+If you get the "No subscription" error, the game/server you are trying to download either requires a login or that you have purchased the game. You will therefore have to log in with a Steam username and password. If that doesn't help, you may need to purchase a copy of the game on Steam first. See [[Dedicated Servers List]].
+{{Note|For security reasons, it is recommended that you create a new Steam account just for your dedicated servers.}}
+{{Warning|Please use <code>force_install_dir</code> before logon!}}
+
+For example:
+<pre>
+steamcmd +login <username> <password>
+</pre>
+
+=== 32-Bit Libraries on 64-Bit Linux Systems ===
+Since SteamCMD is a 32-bit binary, 32-bit libraries are required.
+
+The following error may occur:
+
+ steamcmd: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
+
+The resolution depends on your distro:
+
+==== Debian-Based Distributions (Ubuntu, Mint, etc.) ====
+
+ sudo apt-get install lib32stdc++6
+
+{{Note|<code>ia32-libs</code> are not required to install SteamCMD; <code>lib32gcc1</code> is enough.}}
+
+With '''Debian 7 "Wheezy"''' you may encounter this error:
+
+ The following packages have unmet dependencies: ia32-libs : Depends: ia32-libs-multiarch but it is not installable
+ E: Unable to correct problems, you have held broken packages.
+
+To fix this, do the following:
+<pre>
+ dpkg --add-architecture i386
+ apt-get update
+ apt-get install lib32gcc1
+</pre>
+
+==== Red Hat-Based Distributions (RHEL, Fedora, CentOS, etc.) ====
+
+ yum install glibc.i686 libstdc++.i686
+
+==== Arch Linux ====
+Don't forget to first enable the [https://wiki.archlinux.org/index.php/Multilib multilib repository].
+
+ pacman -S lib32-gcc-libs
+
+=== Login Failure: No Connection ===
+On Linux servers, you may experience a "Login Failure: No Connection" error. This is related to missing iptables rules. You will want something along these lines:
+<pre>
+iptables -A INPUT -p udp -m udp --sport 27000:27030 --dport 1025:65355 -j ACCEPT
+iptables -A INPUT -p udp -m udp --sport 4380 --dport 1025:65355 -j ACCEPT
+</pre>
+The port list is found here: https://support.steampowered.com/kb_article.php?ref=8571-GLVN-8711&l=english
+
+On Windows servers, you may experience "SteamUpdater: Error: Download failed: http error 0" and "SteamUpdater: Error: Steam needs to be online to update.  Please confirm your network connection and try again.". This is usually fixed by checking "Automatically detect settings" in IE (Internet Explorer) through the lan settings in the Internet option menu.
+
+# Open Internet Explorer (IE).
+# Click on ''Tools'' &rarr; ''Internet Options''
+# Click on the ''Connections'' tab
+# At the bottom, you should see ''Local Area Network (LAN) Settings''.
+# Check the first box (''Automatically detect settings'')
+# Hit ''OK'', and ''Apply''. Try running the SteamCMD again; if it still doesn't work. try lowering your ''Internet Security level zone'' to medium or lower. You can find that in the ''Security'' tab in ''Internet Options''.
+
+=== SteamCMD Startup Errors ===
+==== Unable to Locate a Running Instance of Steam ====
+You may get the following error when starting a server with Linux:
+
+ [S_API FAIL] SteamAPI_Init() failed; unable to locate a running instance of Steam, or a local steamclient.dll.
+
+Resolve the issue by linking <code>steamclient.so</code> to the <code>~/.steam/sdk32/steamclient.so</code> directory:
+
+ ln -s steamcmd/linux32/steamclient.so ~/.steam/sdk32/steamclient.so
+
+==== <code>ulimit</code> Linux Startup Error ====
+Some users may get a <code>ulimit</code> error (no permission/cannot open file) while script is starting up. This error caused by a low setting of the <code>-n</code> parameter (number of file descriptors) of <code>ulimit</code>. SteamCMD uses standard commands inside of the initialization shell script to change the <code>ulimit</code> automatically, but some servers may forbid increasing <code>ulimit</code> values after startup (or beyond a limit set by <code>root</code>).
+
+This can be fixed by changing the file descriptor number ulimit:
+
+ ulimit -n 2048
+
+If an error appears (''no permission''), you will have to log in as root to change the parameter. To check the current setting, type '''ulimit -a'''; the system will reply with many rows, you need to find one:
+ open files                      (-n) 1024
+In this case, ''1024'' is the current value.
+
+<code>root</code> can also modify the limits in the <code>/etc/security/limits.conf</code> file.
+
+In most instances you will simply get a warning message however it will not stop SteamCMD from running.
+
+=== Getting a Linux 64-Bit <code>steamclient.so</code> on a Windows Machine ===
+WSL does not play nicely with 32-bit files.  If you need the steamclient.so 64-bit file you can simply run the following command:
+
+<pre>steamcmd.exe +@sSteamCmdForcePlatformType linux +login anonymous +app_update 1007 +quit</pre>
+
+You will then find the file here:
+
+<pre>.\steamapps\common\Steamworks SDK Redist\linux64</pre>
+
+=== Only the HLDS Engine is Downloaded ===
+When trying to download a {{gldsrc|2}} mod like TFC, initially it only downloads the engine files of the HLDS, but not the mod. This is caused by appmanifest files not downloading correctly. This happens with both the regular version and the beta. You may have to try multiple times until all the required files are downloaded, but once this is done, the files should update correctly next time.
+
+Alternatively, it is possible to copy existing the appmanifest files into the ''steamapps'' directory. Download appmanifest files from the [https://github.com/GameServerManagers/LinuxGSM/tree/master/lgsm/data/appmanifest LinuxGSM] github repository.
+
+Just deleting the appmanifest files, without downloading replacements from a third party, may work as well! You will get an error at first though, complaining that something went wrong, which is due to the deleted files.
+{{note|For some reason, {{cs|2}} is always installed as well.}}
+
+== See Also ==
+* [[Source Dedicated Server]]
+* [[Half-Life Dedicated Server]]
+* [[Dedicated Servers List]]
+* [[SteamCMDui]]
+* [https://www.linode.com/docs/guides/install-steamcmd-for-a-steam-game-server/#install-steamcmd [linode.com<nowiki>]</nowiki> Linux Install SteamCMD]
+

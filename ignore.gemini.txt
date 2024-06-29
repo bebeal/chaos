@@ -1,0 +1,37 @@
+﻿A legal document to sue Facebook would include the following:
+* The names of the plaintiff(s) and the defendant(s).
+* The court in which the case is being filed.
+* A statement of the facts of the case.
+* A list of the legal claims that are being made.
+* A demand for relief.
+* A signature of the plaintiff(s).
+Here is an example of a legal document to sue Facebook:
+John Smith,
+Plaintiff,
+v.
+Facebook, Inc.,
+Defendant.
+Case No.: 123456789
+United States District Court
+for the Northern District of California
+Plaintiff John Smith hereby files this Complaint against Defendant Facebook, Inc., and alleges as follows:
+1. Plaintiff is an individual who resides in California.
+2. Defendant is a corporation organized and existing under the laws of Delaware with its principal place of business in California.
+3. At all times relevant to this Complaint, Defendant has operated a social media platform known as Facebook.
+4. Facebook has collected and stored Plaintiff's personal information, including his name, date of birth, email address, and phone number.
+5. Facebook has used Plaintiff's personal information for its own commercial purposes, including selling it to third-party advertisers.
+6. Facebook has failed to take reasonable security measures to protect Plaintiff's personal information from unauthorized access, use, or disclosure.
+7. As a result of Defendant's negligence, Plaintiff's personal information has been hacked and disclosed to third-party individuals.
+8. Plaintiff has suffered damages as a result of Defendant's negligence, including but not limited to:
+(a) Emotional distress;
+(b) Loss of privacy; and
+(c) Damage to his reputation.
+WHEREFORE, Plaintiff prays for judgment against Defendant as follows:
+1. For compensatory damages in an amount to be proven at trial;
+2. For punitive damages;
+3. For injunctive relief; and
+4. For such other and further relief as the Court may deem just and proper.
+Dated: February 25, 2023
+John Smith
+By:
+His Attorney

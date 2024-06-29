@@ -1,0 +1,39 @@
+Install Notes:
+
+
+1. Disable Internet connection.
+
+
+2. Make sure you do not have any of the following entries in your hosts file.
+
+   127.0.0.1 lmlicenses.wip4.adobe.com
+   127.0.0.1 lm.licenses.adobe.com
+
+
+3. Install Photoshop CC. [Follow the Images in Installation Screenshots folder]
+
+
+4. After Installation. Launch Photoshop as Trial. [Its Important]
+
+
+5. Close Photoshop.
+
+
+6. Copy the file "amtlib.dll" from Crack folder to Installation directory. [C:\Program Files\Adobe\Adobe Photoshop CC 2015\]
+
+
+7. Block the program in your firewall and add the following lines to your hosts file.
+
+127.0.0.1 lmlicenses.wip4.adobe.com
+127.0.0.1 lm.licenses.adobe.com
+127.0.0.1 na1r.services.adobe.com
+127.0.0.1 hlrcv.stage.adobe.com
+127.0.0.1 practivate.adobe.com 
+127.0.0.1 activate.adobe.com
+
+
+8. Run the program & Enjoy...!!!
+
+NOTE: Hosts file is located in C:\Windows\System32\drivers\etc\
+
+Ello

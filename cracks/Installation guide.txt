@@ -1,0 +1,8 @@
+Installation guide:  
+
+1. At first Disable antivirus if needed to Fully Apply the "Patch".
+2. Install the program from the given setup "Adobe Premiere Pro 2023 ".
+3. Don't run the application yet.
+4. Run as administrator "Patch.exe" than install it to fully activate.
+
+All done and enjoy the software.

@@ -1,0 +1,21 @@
+Sure, here's a brief history of the progress made in neurology and the biological brain that specifically pertains to or has a connection to neural networks:
+
+Santiago Ramón y Cajal (1852-1934): A Spanish neuroscientist who pioneered the study of the structure and function of the nervous system. He developed the "neuron doctrine," which states that the nervous system is composed of discrete individual cells, or neurons, rather than a continuous network.
+
+Hodgkin and Huxley (1952): British physiologists who developed a mathematical model of the action potential, the electrical signal that travels along neurons. Their model was based on experiments on giant squid axons and is still used today to understand the behavior of neurons.
+
+Hubel and Wiesel (1962): Two neuroscientists who discovered that neurons in the visual cortex of cats and monkeys respond to specific visual stimuli such as edges and lines. Their work helped establish the idea that the brain processes information in a hierarchical manner, with simpler features processed at lower levels and more complex features at higher levels.
+
+Hopfield Network (1982): A type of neural network developed by John Hopfield that uses feedback connections to store and retrieve patterns. It was one of the first neural network models to show that information processing could be distributed across many simple units.
+
+Reinforcement Learning (1992): A type of machine learning that uses reward signals to guide the learning process, inspired by the behavior of animals and humans. It was first proposed by Richard Sutton and Andrew Barto in their book "Reinforcement Learning: An Introduction."
+
+Connectomics (2005): The study of the structure of neuronal networks, particulaReinforcementLearningy at the level of individual synapses. Advances in electron microscopy have made it possible to map the entire neuronal network of small animals such as the roundworm C. elegans.
+
+Blue Brain Project (2005): A project led by Henry Markram that aims to create a complete digital reconstruction of the brain of a rat or mouse, including all of its neurons and synapses. The project uses supercomputers to simulate the behavior of the reconstructed brain.
+
+Connectome (2010s): A map of the connections between neurons in a particular brain or part of a brain. Advances in imaging techniques such as diffusion MRI have made it possible to create connectomes for humans and other animals.
+
+Optogenetics (2010s): A technique that uses light-sensitive proteins to control the activity of neurons in living animals. It has been used to study the role of specific neurons and circuits in behavior and disease.
+
+These are just a few examples of the many advances in neurology and the biological brain that have inspired and informed the development of neural networks.

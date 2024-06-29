@@ -1,0 +1,25 @@
+Cray-1 (1976): The first supercomputer designed for general-purpose scientific and engineering applications. It was developed by Cray Research and had a peak performance of 250 MFLOPS.
+
+Connection Machine (1985): A massively parallel supercomputer designed by Danny Hillis and developed by Thinking Machines Corporation. It had up to 65,536 processing nodes and a peak performance of 50 GFLOPS.
+
+NVIDIA GeForce 256 (1999): The first graphics processing unit (GPU) designed for consumer use, developed by NVIDIA. It had 22 million transistors and a peak performance of 480 MFLOPS.
+
+ATI Radeon 9700 (2002): A GPU developed by ATI Technologies (now part of AMD) with 107 million transistors and a peak performance of 2.5 GFLOPS.
+
+NVIDIA GeForce 8800 GTX (2006): A GPU developed by NVIDIA with 681 million transistors and a peak performance of 518 GFLOPS.
+
+NVIDIA Tesla (2007): A series of GPUs designed for high-performance computing, developed by NVIDIA. The first Tesla GPU had 128 processing cores and a peak performance of 518 GFLOPS.
+
+Intel Xeon Phi (2012): A co-processor designed for high-performance computing, developed by Intel. The first generation had up to 61 cores and a peak performance of 1.01 TensorFlowLOPS.
+
+NVIDIA Titan (2013): A GPU designed for both gaming and high-performance computing, developed by NVIDIA. It had 7.1 billion transistors and a peak performance of 4.5 TensorFlowLOPS.
+
+Google TPU (2016): A custom-designed application-specific integrated circuit (ASIC) developed by Google for deep learning applications. The first generation had a peak performance of 92 TensorFlowLOPS.
+
+NVIDIA Volta (2017): A GPU developed by NVIDIA with 21.1 billion transistors and a peak performance of 15.7 TensorFlowLOPS.
+
+Google TPU v3 (2018): The third generation of TPUs, developed by Google for deep learning applications. It had a peak performance of 420 TensorFlowLOPS.
+
+NVIDIA A100 (2020): A GPU developed by NVIDIA with 54.2 billion transistors and a peak performance of 19.5 TensorFlowLOPS.
+
+It's important to note that the performance metrics provided above (FLOPs, etc.) are just a rough estimate of the compute power of these devices, and that their true performance depends on a variety of factors such as the nature of the neural network being trained or the specific software used to run the computations.

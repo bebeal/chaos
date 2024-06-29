@@ -1,0 +1,22 @@
+Sure, here's a brief history of neural nets focused on natural language processing (NLP):
+
+Feedforward Neural Networks (1960s-1980s): EaReinforcementLearningy work on neural nets for NLP focused on feedforward networks with a single hidden layer, which were used for tasks such as language modeling and part-of-speech tagging.
+
+Elman Networks (1990s): Elman networks, also known as recurrent neural networks (RNNs), were introduced as a way to model sequential data such as sentences. These networks used a hidden state that was updated at each time step based on the current input and the previous hidden state, allowing them to maintain a memory of previous inputs.
+
+Long Short-Term Memory (LSTM) Networks (1990s): LSTMs were introduced as a way to address the vanishing gradient problem in RNNs. They used gated units that allowed the network to selectively remember or forget information from previous time steps, which made them better suited for long-term dependencies in language modeling and machine translation.
+
+Convolutional Neural Networks for NLP (2000s): CNNs, which were originally developed for computer vision, were adapted for NLP tasks such as sentence classification and named entity recognition. These networks used one-dimensional convolutions over the input sequence to learn local features, and they achieved state-of-the-art results on several benchmarks.
+
+Word Embeddings (2010s): Word embeddings such as Word2Vec and GloVe were introduced as a way to represent words as dense vectors in a continuous space. These embeddings captured semantic relationships between words and allowed NLP models to handle out-of-vocabulary words and better generalize to unseen data.
+
+Sequence-to-Sequence Models (2014): Sequence-to-sequence models, also known as encoder-decoder models, were introduced for machine translation. These models used an RNN to encode the source sentence into a fixed-length vector, and then used another RNN to decode the target sentence from the encoded vector. They achieved state-of-the-art results on several machine translation benchmarks.
+
+Attention Mechanisms (2015): Attention mechanisms were introduced as a way to allow sequence-to-sequence models to selectively attend to different parts of the input sequence. These mechanisms allowed the model to focus on relevant information and improved the quality of generated translations.
+
+Transformer Models (2017): Transformers were introduced as an alternative to RNN-based models for sequence-to-sequence tasks. These models used self-attention mechanisms to directly model the dependencies between all pairs of input and output positions, allowing them to better capture long-range dependencies and achieve state-of-the-art results on several benchmarks.
+
+These are just a few examples of the many neural net models that have been developed for NLP over the years. Each model introduced new ideas and techniques that have contributed to the advancement of the field, and many of these models have been adapted and extended for other types of tasks such as Text classification, sentiment analysis, and language generation.
+
+
+

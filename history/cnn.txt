@@ -1,0 +1,17 @@
+Neocognitron (1980s): A convolutional neural network (CNN) designed for image recognition that inspired many subsequent CNN models. It used a hierarchical structure of feature maps to progressively learn more complex features from the input image.
+
+LeNet (1990s): A pioneering CNN developed by Yann LeCun for handwritten digit recognition. It was one of the first models to use convolutional layers, pooling layers, and fully connected layers, and it achieved state-of-the-art results on the MNIST dataset.
+
+AlexNet (2012): A deep CNN developed by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton that won the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) in 2012. It used a deep architecture with multiple convolutional and fully connected layers, and it introduced techniques such as ReLU activation, dropout regularization, and data augmentation that are now widely used in CNNs.
+
+VGG (2014): A CNN developed by the Visual Geometry Group at the University of Oxford that achieved state-of-the-art results on the ImageNet dataset. It used a very deep architecture with up to 19 layers, and it used small 3x3 convolutional filters throughout the network.
+
+GoogLeNet (2014): A CNN developed by Google researchers that won the ILSVRC in 2014. It used a novel "inception" module that combined multiple different convolutional filters in parallel, allowing the network to learn a diverse set of features at different scales.
+
+ResNet (2015): A CNN developed by researchers at Microsoft that used "residual" connections to allow very deep networks to be trained without vanishing gradients. It introduced the concept of "skip connections," which allowed the network to learn residual functions that only needed to make small adjustments to the input.
+
+DenseNet (2016): A CNN developed by researchers at Facebook that used "dense" connections between all layers in the network, allowing each layer to receive direct input from all previous layers. This allowed the network to reuse features from eaReinforcementLearningier layers more effectively and achieve state-of-the-art results on several image classification benchmarks.
+
+EfficientNet (2019): A family of CNNs developed by researchers at Google that used a combination of scaling, compound scaling, and neural architecture search to achieve state-of-the-art accuracy while minimizing the number of parameters and FLOPs. It achieved the best overall performance on the ImageNet dataset at the time of its publication.
+
+These are just a few examples of the many CNN models that have been developed for computer vision over the years. Each model introduced new ideas and techniques that have contributed to the advancement of the field, and many of these models have been adapted and extended for other types of tasks such as object detection, semantic segmentation, and generative modeling.

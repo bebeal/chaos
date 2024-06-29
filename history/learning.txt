@@ -1,0 +1,160 @@
+* Learning Paradigms (will go in depth with sub topics later for these)
+    * Supervised Learning
+    * Unupservised Learning
+    * Semi-Supervised Learning
+    * Transfer Learning
+    * Multi-instance Learning
+    * Multi-task Learning
+    * Active Learning
+    * Online Learning
+    * Meta-Learning
+    * Reinforcement Learning
+
+* Optimization Techniques
+    * Gradient Descent (Batch, Stochastic, Mini-Batch)
+    * RMSprop
+    * Adam (+ Nadam, + AdamW)
+    * Learning Rate Schedules
+    * Gradient Clipping
+    * Stochastic Weight Averaging
+
+* Loss Functions
+    * MSE
+    * Cross Entropy
+    * KL Divergence
+    * Binary Cross Entropy (BCE) (+ BCE With Logits)
+    * Triplet Margin
+    * Multi Margin
+    * Cosine Embedding
+    * Multi Label Soft Marign
+    * L1 (+ Smooth L1 variant)
+    * Huber
+    * Hinge Embedding
+    * Margin Ranking
+    * Negative Log Liklihood (+ Gaussian NL, + Poisson NL)
+    * Connectionist Temporal Classification
+
+* Fully Connected / Dense / Linear
+    * Basic Linear Layer
+    * Output Layer (Softmax, Sigmoid, etc. for classification)
+
+* Residual Layers
+    * Residual / Skip Layer
+
+* Convolutional
+    * Convolutional Layer (1D, 2D, 3D)
+    * Transposed Convolutional Layer (also called Deconvolution)
+    * Depthwise and Separable Convolution Layers
+    * Dilated/Atrous Convolution
+
+* Pooling
+    * MaxPooling
+    * AveragePooling
+    * GlobalMaxPooling
+
+* Upsampling
+
+* Regularization
+    * Dropout
+    * L1 & L2 Regularization
+    * Spatial Dropout
+    * Alpha Dropout
+
+* Normalization
+    * Batch Normalization
+    * Layer Normalization
+    * Instance Normalization
+    * Group Normalization
+
+* Recurrent
+    * Basic RNN Layer
+    * LSTM (Long Short-Term Memory) Layer
+    * GRU (Gated Recurrent Unit) Layer
+    * Bidirectional RNN, LSTM, GRU
+  
+* Attention
+    * Self-attention / Multi-head attention
+    * Transformer Block (Encoder, Decoder)
+    * Scaled Dot-Product Attention
+  
+* Activation
+    * Sigmoid
+    * ReLU (Rectified Linear Unit)
+    * Leaky ReLU, Parametric ReLU, PReLU
+    * Softmax
+    * Tanh
+    * ELU (Exponential Linear Unit)
+    * Swish, SELU (Scaled Exponential Linear Unit)
+    * GELU
+    * Mish
+
+* Embedding
+    * Basic Embedding Layer
+    * Positional Encoding
+
+* Network Initialization
+    * Xavier Initialization
+    * He Initialization
+
+* Advanced Regularization Techniques
+    * Early Stopping
+    * Data Augmentation
+    * Batch Renormalization
+
+* Evaluation Metrics
+    * Accuracy, Precision, Recall, F1-Score
+    * AUC-ROC
+    * Log-Loss
+    * Mean Average Precision
+    * Intersection over Union
+
+* Advanced Network Types
+    * Transformers
+        * Vanilla Transformer
+        * BERT (Bidirectional Encoder Representations from Transformers)
+        * GPT (Generative Pretraining Transformer)
+        * T5 (Text-To-Text Transfer Transformer)
+        * ALBERT (A Lite BERT)
+        * RoBERTa (A Robustly Optimized BERT)
+    * Convolutional Network Architectures
+        * LeNet-5
+        * AlexNet
+        * VGGNet (VGG-16 and VGG-19)
+        * GoogLeNet/Inception
+        * ResNet (Residual Network)
+        * DenseNet (Densely Connected Convolutional Networks)
+        * Xception (Extreme Inception)
+    * Generative Models
+        * Autoencoders
+            * Vanilla Autoencoder
+            * Sparse Autoencoder
+            * Denoising Autoencoder
+            * Variational Autoencoder (VAE)
+        * Generative Adversarial Networks (GANs)
+            * Vanilla GAN
+            * DCGAN (Deep Convolutional GAN)
+            * cGAN (Conditional GAN)
+            * CycleGAN
+            * Pix2Pix (Image-to-Image Translation with Conditional Adversarial Networks)
+            * BigGAN
+            * StyleGAN (and StyleGAN2)
+    * Recurrent Network Architectures
+        * Vanilla RNN
+        * LSTM (Long Short-Term Memory)
+        * GRU (Gated Recurrent Unit)
+        * Bi-directional RNN
+        * Seq2Seq Models
+        * Attention Mechanisms
+    * Other Types of Networks
+        * Siamese Networks
+        * Triplet Loss Networks (useful for face recognition, etc.)
+        * Capsule Networks
+        * U-Net (useful in image segmentation)
+        * MobileNet (Efficient networks for mobile and edge devices)
+        * EfficientNet (Scaling up ConvNets in a more structured manner)
+
+
+* Learning Paradigms
+* Model Abstractions
+* Architectural Instances
+* Training Techniques

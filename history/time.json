@@ -1,0 +1,87 @@
+* 1943 McCulloch-Pitts Neuron
+  * Walter Pitts
+  * Warren S. McCulloch
+  * Threshold Logic
+  * Some Observations on the Simple Neuron Circuit
+  * A Logical Calculus of the Ideas Immanent in Nervous Activity
+  * What the Frog's Eye Tells the Frog's Brain
+
+* 1949 Donald Hebb invents Hebbian Learning
+  * based on neural plasticity
+  * Long-Term Potential
+
+* Alan Turing proposes Turing Test
+
+* 1958 Frank Rosenblatt invents Perceptrons
+
+* 1959 Nobellaurete's Hubel and Wiesel's Discovery of Primary Visual Cortex
+
+* 1969 The First AI Winter
+  * Marvin Minskys and Seymours Paper 'Perceptrons: An introduction to computational geometry' is credited for bringing forth the first AI Winter. heavily critiques Perceptrons and Neural Nets. Two critical issues noted: They cannot learn XOR function, and lack of processing power available
+
+* 1975 Backpropogation
+  * [Paul John Werbos](https://en.wikipedia.org/wiki/Paul_Werbos) invents [backpropagation](https://en.wikipedia.org/wiki/Backpropagation) which enabled practical training of multi-layer networks. Backpropagation distributed the error term back up through the layers, by modifying the weights at each node.
+
+* 1985s Connectionism
+  * [parallel distributed processing](https://en.wikipedia.org/wiki/Parallel_distributed_processing) became popular under the name [connectionism](https://en.wikipedia.org/wiki/Connectionism)
+  * Rumelhart and McClelland (1986) described the use of connectionism to simulate neural processes.
+
+* SVM
+  * Support vector machines, and simple methods such as linear classifiers leaders in classification tasks.
+
+* 1997 DeepBlue Deep Blue beat Kasparov in a famous Gramdmaster Chess match
+
+* 1989 LeCun trains his convolutional nn to recognize handwritten digits
+
+* 1992 Max-Pooling
+  * max-pooling introduced by ? to help with least shift invariance and tolerance to deformation to aid in 3D object recognition
+
+* 1991 The Vanishing Gradient 
+  *  Hochreiter's diplom thesis of 1991 formally identified the reason for this failure in the "vanishing gradient problem", which not only affects many-layered feedforward networks,[4] but also recurrent networks.
+
+* 1991 Elment RNN
+  * Distributed representations, simple recurrent networks, and grammatical structure
+
+* 1992 Multi-Level Hierarchy of Networks
+  * Overcome vanishing gradient. Pre-trained one level at a time by unsupervised learning and fine-tuned by backpropagation. Eventually led down the path of initializing the weights of a neural network with specific functions and parameters.
+
+* 1995 AI Winter 2
+* 1995 The Great AI Winter 2: Electric Boogalo
+  * As neural networks became deeper (with more stacked layers), backpropagation became slower due to the vanishing gradients problem. Simply put, the backpropagation algorithm requires using the activation functions’ derivatives (slopes). And, back then, the activation functions in use were mostly sigmoid and tanh. Unfortunately, their derivatives are close to zero, except in x ∈ [−1, 1] (as shown below). Thus, when you stack multiple layers, the gradient descent becomes slower and slower for the deeper layers, resulting in an exponentially slow optimization.
+
+
+
+* 2010 Deep Learning
+  * 2010 ReLU
+  * 2012 recurrent neural networks and deep feedforward neural networks developed in Schmidhuber's research group won eight international competitions in pattern recognition and machine learning.
+  * 2014 ADAM
+
+* 2010 HMMs with context-dependent states that define the neural network output layer can drastically reduce errors in large-vocabulary speech recognition tasks such as voice search.
+  * GPU-based implementations of this approach won many pattern recognition contests, including the IJCNN 2011 Traffic Sign Recognition Competition, the ISBI 2012 Segmentation of neuronal structures in EM stacks challenge, the ImageNet Competition and others.
+
+* 2012 Ciresan and colleagues won pattern recognition contests, including the IJCNN 2011 Traffic Sign Recognition Competition the ISBI 2012 Segmentation of Neuronal Structures in Electron Microscopy Stacks challenge and others. Their neural networks were the first pattern recognizers to achieve human-competitive/superhuman performance on benchmarks such as traffic sign recognition, or the MNIST handwritten digits problem.
+
+* 2012 Deep, highly nonlinear neural architectures similar to the neocognitron and the "standard architecture of vision", inspired by simple and complex cells, were pre-trained with unsupervised methods by Hinton. A team from his lab won a 2012 contest sponsored by Merck to design software to help find molecules that might identify new drugs.
+
+* 2012 Alex Krizhevsky kicks off breif AI revolution after dominating the ImageNet Large Scale Visual Recognition Challenge, a data science competition to classify pictures. Their Model, based on convolutionals, achieved an unprecedented error rate of 15.3%, whereas the second-best model got only 26.2%. Moreover, Krizhevsky trained this network using graphical processing units (GPU) instead of the traditional CPUs. In 2012, no other participants were using neural networks in this challenge. The next year, in the 2013 edition, all participants used similar neural networks.
+
+* 2016 DeepMind develops AlphaGo — beats the Go world champion. 
+
+* 2017 DeepMind released AlphaGo Zero, which beat the late 2016-AlphaGo 100 games to 0. AlphaGo Zero only required three days of training to achieve this, learning to play Go only by competing against itself. 
+
+* 2020 OpenAI released the third iteration of an AI specialized in producing texts: GPT3. This AI can write poetry, tell stories, solve equations, code websites, and even write articles about itself.
+
+
+* PPO
+* Soft-Actor-Critic
+* Dataset Filters
+* Grokking
+* Human-Pose-Estimation
+* De-Convolution
+* Universal Approximators
+* 
+
+
+
+
+

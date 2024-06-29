@@ -1,0 +1,17 @@
+Stochastic Gradient Descent (SGD) (1960s-1970s): A classic optimization algorithm that updates the model parameters by computing the gradient of the loss function with respect to the parameters on a small subset of the training data, or a "mini-batch." This allows the algorithm to converge faster than batch gradient descent, which computes the gradient on the entire training set.
+
+Momentum (1980s): A technique that adds a fraction of the previous update to the current update, which helps the algorithm to move more smoothly through the parameter space and avoid oscillations.
+
+Adagrad (2011): An adaptive optimization algorithm that adjusts the learning rate for each parameter based on its historical gradients. This allows the algorithm to automatically reduce the learning rate for parameters that have been updated frequently and increase it for those that have been updated infrequently.
+
+Adadelta (2012): A variation of Adagrad that addresses its tendency to decrease the learning rate too aggressively. Adadelta uses a moving average of the gradients to normalize the learning rate and prevent it from decreasing too much.
+
+Adam (2014): An adaptive optimization algorithm that combines the benefits of momentum and Adagrad. Adam uses moving averages of both the gradients and the second moments of the gradients to compute adaptive learning rates for each parameter. It has become one of the most popular optimization algorithms for deep learning.
+
+Nadam (2015): A variation of Adam that incorporates Nesterov momentum, which has been shown to work well on non-convex problems.
+
+RMSprop (2012): Another adaptive optimization algorithm that uses a moving average of the gradients to adjust the learning rate for each parameter. RMSprop also includes a decay parameter that reduces the influence of older gradients on the learning rate.
+
+AdamW (2018): A modification of Adam that adds weight decay to the optimization process. Weight decay is a regularization technique that penalizes large weights to prevent overfitting.
+
+These are just a few examples of the many optimization algorithms that have been developed for neural networks over the years. Each algorithm has its own strengths and weaknesses, and the choice of optimizer depends on the specific problem and architecture being used.

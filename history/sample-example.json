@@ -1,0 +1,438 @@
+"events": [
+    {
+        "title": "Artificial Neuron",
+        "date": "December 1943",
+        "description": "The [**artificial neuron**](https://en.wikipedia.org/wiki/Artificial_neuron) is a mathematical model that imitates the functioning of a biological neuron. It was developed by [Warren McCulloch](https://en.wikipedia.org/wiki/Warren_Sturgis_McCulloch) and [Walter Pitts](https://en.wikipedia.org/wiki/Walter_Pitts) in 1943 and is considered the first neural model invented. The artificial neuron serves as the foundation for the development of artificial neural networks, which are now widely used in various fields such as computer vision, natural language processing, and robotics.",
+        "resourceList": [
+            {
+                "url": "https://www.youtube.com/watch?v=NhTZnnJJP64",
+                "label": "Artifical neuron mimicks function of human cells",
+                "icon": "youtube"
+            },
+            {
+                "url": "https://mind.ilstu.edu/curriculum/mcp_neurons/index.html",
+                "label": "McCulloch-Pitts Neurons",
+                "icon": "mindproject"
+            },
+            {
+                "url": "https://en.wikipedia.org/wiki/Artificial_neuron",
+                "label": "Artificial Neuron",
+                "icon": "wikipedia"
+            },
+            {
+                "url": "https://home.csulb.edu/~cwallis/artificialn/History.htm",
+                "label": "History",
+                "icon": "csulb"
+            },
+            {
+                "url": "https://home.csulb.edu//~cwallis/artificialn/walter_pitts.html",
+                "label": "Walter Pitts",
+                "icon": "csulb"
+            },
+            {
+                "url": "https://en.wikipedia.org/wiki/Warren_Sturgis_McCulloch",
+                "label": "Warren Sturgis Mcculloch",
+                "icon": "wikipedia"
+            },
+            {
+                "url": "https://en.wikipedia.org/wiki/Walter_Pitts",
+                "label": "Walter Pitts",
+                "icon": "wikipedia"
+            }
+        ],
+        "researchList": [
+            {
+                "title": "Some observations on the simple neuron circuit",
+                "authors": [
+                    "Warren Sturgis McCulloch",
+                    "Walter Harry Pitts"
+                ],
+                "date": "1942",
+                "abstract": "A new point of view in the theory of neuron networks is here adumbrated in its relation to the simple circuit: it is shown how these methods enable us to extend considerably and unify previous results for this case in a much simpler way.",
+                "pdfs": [
+                    "./pdfs/SomeObs.pdf"
+                ]
+            },
+            {
+                "title": "A logical calculus of the ideas immanent in nervous activity",
+                "authors": [
+                    "Warren Sturgis McCulloch",
+                    "Walter Harry Pitts"
+                ],
+                "date": "1943",
+                "abstract": "This paper presents a logical calculus of the ideas immanent in nervous activity, which is the foundation for the development of the artificial neuron model.",
+                "pdfs": [
+                    "./pdfs/McCullochAndPitts.pdf"
+                ]
+            }
+        ],
+        "contentList": [
+            {
+                "src": "https://www.researchgate.net/publication/335867733/figure/fig1/AS:804133791596544@1568731844156/Working-principle-of-an-artificial-neuron-Artificial-neural-network-ANN-22-is-a.ppm",
+                "caption": "In every neuron, input is associated with a weight and a bias: data passes to structure next level through an activation function.",
+                "source": "https://www.researchgate.net/publication/335867733"
+            },
+            {
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Neuron3.svg/400px-Neuron3.svg.png",
+                "caption": "Neuron and myelinated axon, with signal flow from inputs at dendrites to outputs at axon terminals",
+                "source": "https://en.wikipedia.org/wiki/Artificial_neuron"
+            },
+            {
+                "src": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Artificial_neuron.png",
+                "caption": "Artificial neuron model",
+                "source": "https://en.wikipedia.org/wiki/Artificial_neuron"
+            }
+        ]
+    },
+    {
+        "title": "The Perceptron",
+        "date": "July 1958",
+        "description": "The [**Perceptron**](https://en.wikipedia.org/wiki/Perceptron) is an early [neural network](https://en.wikipedia.org/wiki/Neural_network) algorithm for supervised learning of binary classifiers. It was invented by [Frank Rosenblatt](https://en.wikipedia.org/wiki/Frank_Rosenblatt) in 1957 while working at the Cornell Aeronautical Laboratory. The invention generated significant excitement and was widely covered in the media as a major breakthrough in artificial intelligence. The perceptron is a linear classifier that works by finding an equation for a decision boundary that separates two classes of data. It was one of the first algorithms to demonstrate the power of neural networks and laid the foundation for the development of more advanced algorithms and architectures in the field of artificial intelligence.",
+        "resourceList": [
+            {
+                "url": "https://en.wikipedia.org/wiki/Perceptron",
+                "label": "Perceptron",
+                "icon": "wikipedia"
+            },
+            {
+                "url": "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon",
+                "label": "\n  Professor\u2019s perceptron paved the way for AI \u2013 60 years too soon\n",
+                "icon": "cornell"
+            },
+            {
+                "url": "https://www.youtube.com/watch?v=cNxadbrN_aI",
+                "label": "Perceptron Research from the 50's & 60's, clip",
+                "icon": "youtube"
+            }
+        ],
+        "researchList": [
+            {
+                "title": "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain",
+                "authors": [
+                    "Frank Rosenblatt"
+                ],
+                "date": "January 1957",
+                "abstract": "The work described in this report was supported as a part of the internal research program of the Cornell Aeronautical Laboratory, Inc. The concepts discussed had their origins in some independent research by the author in the field of physiological psychology, in which the aim has been to formulate a brain analogue useful in analysis. This area of research has been of active interest to the author for five or six years. The Perceptron concept is a recent product of this research program; the current effort is aimed a t establishing the technical and economic feasibility of the Perceptron.",
+                "pdfs": [
+                    "./pdfs/rosenblatt.pdf"
+                ]
+            }
+        ],
+        "contentList": [
+            {
+                "src": "https://upload.wikimedia.org/wikipedia/commons/1/1a/330-PSA-80-60_%28USN_710739%29_%2820897323365%29.jpg",
+                "caption": "The Perceptron",
+                "source": "https://en.wikipedia.org/wiki/Perceptron"
+            },
+            {
+                "src": "https://news.cornell.edu/sites/default/files/styles/full_size/public/2019-09/0925_rosenblatt4.jpg?itok=UQKthwdI",
+                "caption": "An image of the perceptron from Rosenblatt's “The Design of an Intelligent Automaton,” Summer 1958.",
+                "source": "https://blogs.umass.edu/brain-wars/files/2016/03/rosenblatt-1957.pdf"
+            },
+            {
+                "src": "https://news.cornell.edu/sites/default/files/styles/breakout/public/2019-09/0925_rosenblatt6.jpg?itok=Zhu0gVzm",
+                "caption": "Frank Rosenblatt, left, and Charles W. Wightman work on part of the unit that became the first perceptron in December 1958.",
+                "source": "Division of Rare and Manuscript Collections"
+            }
+        ]
+    },
+    {
+        "title": "Neocognitron",
+        "date": "April 1980",
+        "description": "The [**Neocognitron**](https://en.wikipedia.org/wiki/Neocognitron) is an artificial neural network model proposed by [Kunihiko Fukushima](https://en.wikipedia.org/wiki/Kunihiko_Fukushima) in 1979. It is a hierarchical, multilayered network that can recognize visual patterns and is considered to be the origin of the modern [Convolutional Neural Network (CNN)](https://en.wikipedia.org/wiki/Convolutional_neural_network). The Neocognitron introduced the key concepts of convolutional layers and downsampling layers, which are fundamental to the structure and function of CNNs. These innovations have had a significant impact on the field of computer vision and deep learning.\n$$x + y$$ hello $x$ is $5$.",
+        "resourceList": [
+            {
+                "url": "https://en.wikipedia.org/wiki/Neocognitron",
+                "label": "Neocognitron",
+                "icon": "wikipedia"
+            },
+            {
+                "url": "http://www.scholarpedia.org/article/Neocognitron",
+                "label": "Neocognitron",
+                "icon": "http://www.scholarpedia.org/w/images/6/64/Favicon.ico"
+            },
+            {
+                "url": "http://neocognitron.euweb.cz/",
+                "label": "euweb",
+                "icon": "http://neocognitron.euweb.cz/favicon.ico"
+            }
+        ],
+        "researchList": [
+            {
+                "title": "A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position - Neocognitron",
+                "url": "https://www.sciencedirect.com/science/article/pii/0020025579900243",
+                "authors": [
+                    "Kunihiko Fukushima"
+                ],
+                "date": "April 1980",
+                "abstract": "A neural network model for a mechanism of visual pattern recognition is proposed in this paper. The network is self-organized by \"learning without a teacher\", and acquires an ability to recognize stimulus patterns based on the geometrical similarity (Gestalt) of their shapes without affected by their positions. This network is given a nickname \"neocognitron\". After completion of self-organization, the network has a structure similar to the hierarchy model of the visual nervous system proposed by Hubel and Wiesel. The network consists of an input layer (photoreceptor array) followed by a cascade connection of a number of modular structures, each of which is composed of two layers of cells connected in a cascade. The first layer of each module consists of \"S-cells\", which show characteristics similar to simple cells or lower order hypercomplex cells, and the second layer consists of \"C-cells\" similar to complex cells or higher order hypercomplex cells. The afferent synapses to each S-cell have plasticity and are modifiable. The network has an ability of unsupervised learning: We do not need any \"teacher\" during the process of self-organization, and it is only needed to present a set of stimulus patterns repeatedly to the input layer of the network. The network has been simulated on a digital computer. After repetitive presentation of a set of stimulus patterns, each stimulus pattern has become to elicit an output only from one of the C-cells of the last layer, and conversely, this C-cell has become selectively responsive only to that stimulus pattern. That is, none of the C-cells of the last layer responds to more than one stimulus pattern. The response of the C-cells of the last layer is not affected by the pattern's position at all. Neither is it affected by a small change in shape nor in size of the stimulus pattern.",
+                "pdfs": [
+                    "./pdfs/fukushima.pdf",
+                    "http://www.rctn.org/bruno/public/papers/Fukushima1980.pdf",
+                    "http://vision.stanford.edu/teaching/cs131_fall1415/lectures/Fukushima1988.pdf"
+                ]
+            }
+        ],
+        "contentList": [
+            {
+                "src": "./pics/Neocognitron_cells.png",
+                "caption": "A display of an example of the response of all the individual cells in the neocognitron ",
+                "source": "http://www.rctn.org/bruno/public/papers/Fukushima1980.pdf"
+            },
+            {
+                "src": "./pics/Neocognitron_handwriting.png",
+                "caption": "Some examples of distorted stimulus patterns which the neocognitron has correctly recognized, and the response of the final layer of the network",
+                "source": "http://www.rctn.org/bruno/public/papers/Fukushima1980.pdf"
+            },
+            {
+                "src": "https://d3i71xaburhd42.cloudfront.net/33c3e56439b11e2d77d99da667ae86afbf6e1ec3/500px/3-Figure3-1.png",
+                "caption": " Illustration showing the input interconnections to the cells within a single cell-plane",
+                "source": "https://www.semanticscholar.org/paper/Neocognitron%3A-A-hierarchical-neural-network-capable-Fukushima/33c3e56439b11e2d77d99da667ae86afbf6e1ec3/figure/1"
+            },
+            {
+                "src": "https://d3i71xaburhd42.cloudfront.net/33c3e56439b11e2d77d99da667ae86afbf6e1ec3/5-Figure5-1.png",
+                "caption": "Connections converging to a feature-extracting S cell.",
+                "source": "https://www.semanticscholar.org/paper/Neocognitron%3A-A-hierarchical-neural-network-capable-Fukushima/33c3e56439b11e2d77d99da667ae86afbf6e1ec3/figure/1"
+            }
+        ],
+    },
+    {
+        "title": "Deep Q Network (DQN)",
+        "date": "January 2013",
+        "description": "The [**Deep Q Network (DQN)**](https://en.wikipedia.org/wiki/Q-learning#Deep_Q-learning) is a breakthrough in deep reinforcement learning, combining [Q-learning](https://en.wikipedia.org/wiki/Q-learning) with deep neural networks. It was introduced in 2013 by a team of researchers including [Volodymyr Mnih](https://en.wikipedia.org/wiki/Volodymyr_Mnih), [Koray Kavukcuoglu](https://scholar.google.com/citations?user=lqO3A8oAAAAJ&hl=en), [David Silver](https://en.wikipedia.org/wiki/David_Silver_(computer_scientist)), [Alex Graves](https://en.wikipedia.org/wiki/Alex_Graves_(computer_scientist)), [Ioannis Antonoglou](https://scholar.google.com/citations?user=rJw7VZwAAAAJ&hl=en), [Daan Wierstra](https://scholar.google.com/citations?user=3f3wJEEAAAAJ&hl=en), and [Martin Riedmiller](https://scholar.google.com/citations?user=0Z0RwZAAAAAJ&hl=en). Their paper, ['Playing Atari with Deep Reinforcement Learning'](https://arxiv.org/abs/1312.5602), demonstrated the ability of DQNs to learn and master various Atari games directly from raw pixel inputs, outperforming previous methods. The DQN algorithm was a significant milestone in AI research, leading to numerous advancements in reinforcement learning and the development of more sophisticated algorithms.",
+        "related_topics": [
+            "Reinforcement Learning",
+            "Q-Learning",
+            "Deep Learning",
+            "Neural Networks",
+            "Atari Games"
+        ],
+        "resourceList": [
+            {
+                "url": "https://arxiv.org/abs/1312.5602",
+                "label": "[1312.5602] Playing Atari with Deep Reinforcement Learning",
+                "icon": "https://static.arxiv.org/static/browse/0.3.4/images/icons/apple-touch-icon.png"
+            },
+            {
+                "url": "https://en.wikipedia.org/wiki/Q-learning#Deep_Q-learning",
+                "label": "Q-Learning",
+                "icon": "wikipedia"
+            },
+            {
+                "url": "https://en.wikipedia.org/wiki/Reinforcement_learning",
+                "label": "Reinforcement Learning",
+                "icon": "wikipedia"
+            },
+            {
+                "url": "https://github.com/deepmind/dqn",
+                "label": "dqn",
+                "icon": "github"
+            }
+        ],
+        "researchList": [
+            {
+                "title": "Playing Atari with Deep Reinforcement Learning",
+                "authors": [
+                    "Vlad Mnih",
+                    "Koray Kavukcuoglu",
+                    "David Silver",
+                    "Alex Graves",
+                    "Ioannis Antonoglou",
+                    "Daan Wierstra",
+                    "Martin Riedmiller"
+                ],
+                "date": "January 1, 2013",
+                "abstract": "We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them. ",
+                "pdfs": [
+                    "./pdfs/PlayingAtariWithDeepReinforcementLearning.pdf",
+                    "https://arxiv.org/pdf/1312.5602.pdf",
+                    "https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf",
+                    "https://arxiv.org/pdf/1312.5602v1.pdf"
+                ]
+            },
+            {
+                "title": "Human Level Control Through Deep Reinforcement Learning",
+                "authors": [
+                    " Vlad Mnih",
+                    "Koray Kavukcuoglu",
+                    "David Silver",
+                    "Andrei Rusu",
+                    "Joel Veness",
+                    "Marc Gendron-Bellemare",
+                    "Alexander Graves",
+                    "Martin Riedmiller",
+                    "Andreas Fidjeland",
+                    "Georg Ostrovski",
+                    "Stig Petersen",
+                    "Charlie Beattie",
+                    "Amir Sadik",
+                    "Ioannis Antonoglou",
+                    "Helen King",
+                    "Dharshan Kumaran",
+                    "Daan Wierstra",
+                    "Shane Legg",
+                    "Demis Hassabis"
+                ],
+                "date": "February 25, 2015",
+                "abstract": "The theory of reinforcement learning provides a normative account deeply rooted in psychological and neuroscientific perspectives on animal behaviour, of how agents may optimize their control of an environment. To use reinforcement learning successfully in situations approaching real-world complexity, however, agents are confronted with a difficult task: they must derive efficient representations of the environment from high-dimensional sensory inputs, and use these to generalize past experience to new situations. Remarkably, humans and other animals seem to solve this problem through a harmonious combination of reinforcement learning and hierarchical sensory processing systems, the former evidenced by a wealth of neural data revealing notable parallels between the phasic signals emitted by dopaminergic neurons and temporal difference reinforcement learning algorithms. While reinforcement learning agents have achieved some successes in a variety of domains, their applicability has previously been limited to domains in which useful features can be handcrafted, or to domains with fully observed, low-dimensional state spaces. Here we use recent advances in training deep neural networks to develop a novel artificial agent, termed a deep Q-network, that can learn successful policies directly from high-dimensional sensory inputs using end-to-end reinforcement learning. We tested this agent on the challenging domain of classic Atari 2600 games. We demonstrate that the deep Q-network agent, receiving only the pixels and the game score as inputs, was able to surpass the performance of all previous algorithms and achieve a level comparable to that of a professional human games tester across a set of 49 games, using the same algorithm, network architecture and hyperparameters. This work bridges the divide between high-dimensional sensory inputs and actions, resulting in the first artificial agent that is capable of learning to excel at a diverse array of challenging tasks. ",
+                "pdfs": [
+                    "./pdfs/HumanLevelControlThroughDeepReinforcementLearning.pdf",
+                    "https://web.stanford.edu/class/psych209/Readings/MnihEtAlHassibis15NatureControlDeepRL.pdf"
+                ]
+            }
+        ],
+        "contentList": [
+            {
+                "src": "https://thumbs.gfycat.com/AnchoredScornfulAustraliansilkyterrier-size_restricted.gif",
+                "caption": "DQN playing Breakout",
+                "source": "https://gfycat.com/anchoredscornfulaustraliansilkyterrier",
+            },
+            {
+                "src": "https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fnature14236/MediaObjects/41586_2015_BFnature14236_Fig1_HTML.jpg",
+                "caption": "DQN Architecture",
+                "source": "https://www.nature.com/articles/nature14236",
+                "id": "dqn-architecture"
+            },
+            {
+                "src": "https://danieltakeshi.github.io/assets/ml/breakout_images_max.png",
+                "caption": "Frame stacking",
+                "source": "https://danieltakeshi.github.io/2017/04/02/playing-atari-with-deep-reinforcement-learning/",
+            }
+        ],
+        "model": {
+            "name": "DQN",
+            "architecture": "RL Model",
+            "architecture_subtype": "DQN",
+            "training_method": "Q-Learning",
+            "learning_paradigm": "Reinforcement Learning",
+            "framework": "TensorFlow",
+            "language": "Python",
+            "platform": "Linux",
+            "hardware": "GPU",
+            "license": "MIT",
+            "layers": {
+                "layer_1": {
+                    "type": "Convolutional",
+                    "size": "8x8",
+                    "stride": "4",
+                    "padding": "0",
+                    "num_filters": "32",
+                    "num_weights": "8192",
+                    "num_biases": "32",
+                    "total_params": "8224",
+                    "total_params_calc": "(8 * 8 * 4 + 1) * 32",
+                    "input": "84x84x4",
+                    "output": "20x20x32"
+                },
+                "activation_1": {
+                    "type": "ReLU"
+                },
+                "layer_2": {
+                    "type": "Convolutional",
+                    "size": "4x4",
+                    "stride": "2",
+                    "padding": "0",
+                    "num_filters": "64",
+                    "num_weights": "32768",
+                    "num_biases": "64",
+                    "total_params": "32832",
+                    "total_params_calc": "(4 * 4 * 32 + 1) * 64",
+                    "input": "20x20x32",
+                    "output": "9x9x64"
+                },
+                "activation_2": {
+                    "type": "ReLU"
+                },
+                "layer_3": {
+                    "type": "Convolutional",
+                    "size": "3x3",
+                    "stride": "1",
+                    "padding": "0",
+                    "num_filters": "64",
+                    "num_weights": "36864",
+                    "num_biases": "64",
+                    "total_params": "36928",
+                    "total_params_calc": "(3 * 3 * 64 + 1) * 64",
+                    "input": "9x9x64",
+                    "output": "7x7x64"
+                },
+                "activation_3": {
+                    "type": "ReLU"
+                },
+                "layer_4": {
+                    "type": "Flatten",
+                    "num_weights": "0",
+                    "num_biases": "0",
+                    "input": "7x7x64",
+                    "output": "3136"
+                },
+                "layer_5": {
+                    "type": "Linear",
+                    "size": "512",
+                    "num_weights": "1605632",
+                    "num_biases": "512",
+                    "total_params": "1606144",
+                    "total_params_calc": "(7 * 7 * 64 + 1) * 512",
+                    "input": "3136",
+                    "output": "512"
+                },
+                "activation_4": {
+                    "type": "ReLU"
+                },
+                "layer_6": {
+                    "type": "Linear",
+                    "size": "N",
+                    "num_weights": "512 * N",
+                    "num_biases": "N",
+                    "total_params": "513 * N",
+                    "total_params_calc": "(512 + 1) * N",
+                    "input": "512",
+                    "output": "N"
+                },
+                "total_params": "~1-2M",
+                "total_params_calc": " 8224 + 32832 + 36928 + 1606144 + (513 * N)"
+            },
+            "datasets": [
+                {
+                    "name": "Arcade Learning Environment",
+                    "description": "A set of Atari 2600 environments simulated through [Stella](https://github.com/stella-emu/stella) and the [Arcade Learning Environment](https://github.com/mgbellemare/Arcade-Learning-Environment).",
+                    "url": [
+                        "https://github.com/mgbellemare/Arcade-Learning-Environment",
+                        "https://github.com/stella-emu/stella",
+                        "https://gymnasium.farama.org/environments/atari/"
+                    ],
+                    "papers": [
+                        {
+                            "title": "The Arcade Learning Environment: An Evaluation Platform for General Agents",
+                            "authors": [
+                                "Marc G. Bellemare",
+                                "Yavar Naddaf",
+                                "Joel Veness",
+                                "Michael Bowling"
+                            ],
+                            "proceeding": "NIPS",
+                            "date": "July 19 2012",
+                            "abstract": "In this article we introduce the Arcade Learning Environment (ALE): both a challenge problem and a platform and methodology for evaluating the development of general, domain-independent AI technology. ALE provides an interface to hundreds of Atari 2600 game environments, each one different, interesting, and designed to be a challenge for human players. ALE presents significant research challenges for reinforcement learning, model learning, model-based planning, imitation learning, transfer learning, and intrinsic motivation. Most importantly, it provides a rigorous testbed for evaluating and comparing approaches to these problems. We illustrate the promise of ALE by developing and benchmarking domain-independent agents designed using well-established AI techniques for both reinforcement learning and planning. In doing so, we also propose an evaluation methodology made possible by ALE, reporting empirical results on over 55 different games. All of the software, including the benchmark agents, is publicly available.",
+                            "urls": [
+                                "https://arxiv.org/abs/1207.4708v2"
+                            ],
+                            "pdfs": [
+                                "https://arxiv.org/pdf/1207.4708v2.pdf"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "hyperparameters": {
+                "learning_rates": "0.00025",
+                "batch_sizes": "32",
+                "optimizers": "RMSProp",
+                "activations": "ReLU",
+                "losses": "Huber",
+                "regularizations": "L2",
+                "dropouts": "0.5",
+                "epochs": "1000"
+            }
+        }
+    }
+]
